@@ -11,10 +11,11 @@
 		"vscode": {
 			"extensions": [
 				"eliostruyf.vscode-demo-time",
-				"ms-dotnettools.csdevkit"
+				"ms-dotnettools.csdevkit",
+				"humao.rest-client"
 			]
 		}
-	}
+	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -28,7 +29,7 @@
 	// }
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "dotnet restore",
+	"postCreateCommand": "bash .devcontainer/post-install.sh"
 
 	// Configure tool-specific properties.
 	// "customizations": {},

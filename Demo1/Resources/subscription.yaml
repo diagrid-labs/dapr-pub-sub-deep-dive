@@ -4,8 +4,8 @@ metadata:
   name: receiver-sub
 spec:
   pubsubname: demo1-pubsub
-  topic: profiles
+  topic: incoming-messages
   routes:
-    default: /profile
+    default: /messagehandler
 scopes:
-- profile
+- receiver

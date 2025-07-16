@@ -4,28 +4,23 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDaprClient();
 var app = builder.Build();
 
-const string PubSubComponentName = "mypubsub";
-const string TopicName = "profiles";
+const string PubSubComponentName = "demo1-pubsub";
+const string TopicName = "incoming-messages";
 
-app.MapPost("/validate", async (
-    SocialProfileDetails profileDetails,
+app.MapPost("/send", async (
     DaprClient daprClient) => {
-        var validator = new SocialProfileDetailsValidator();
-        var validationResult = await validator.ValidateAsync(profileDetails);
-        if (!validationResult.IsValid)
-        {
-            return Results.ValidationProblem(validationResult.ToDictionary());
-        }
-
+        var message = new TinyMessage(Guid.NewGuid(), DateTimeOffset.UtcNow);
         await daprClient.PublishEventAsync(
             PubSubComponentName,
             TopicName,
-            profileDetails);
-        Console.WriteLine($"Profile {profileDetails.Id} sent to topic {TopicName}.");
-        return Results.Created(profileDetails.Id, value: null);
+            message);
+        Console.WriteLine($"Sent message {message.Id}.");
+
+        return Results.Created(message.Id.ToString(), value: null);
     }
 );
 
+
 app.Run();
 
-record DemoMessage(string Id, DateTime TimeStamp);
+record TinyMessage(Guid Id, DateTimeOffset TimeStamp);
