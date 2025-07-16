@@ -1,3 +1,4 @@
+### Declarative Subscription
 @senderUrl=http://localhost:5231
 ### Send
 POST {{senderUrl}}/send

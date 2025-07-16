@@ -1,0 +1,4 @@
+### Programmatic Subscription
+@senderUrl=http://localhost:5233
+### Send
+POST {{senderUrl}}/send
