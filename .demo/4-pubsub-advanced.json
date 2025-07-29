@@ -19,12 +19,12 @@
       }
     },
     {
-      "title": "Bulk Publishing",
+      "title": "Message based routing",
       "description": "",
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/04-advanced/bulk-publishing.md"
+          "path": "/.demo/slides/04-advanced/routing.md"
         }
       ],
       "icons": {
@@ -33,12 +33,12 @@
       }
     },
     {
-      "title": "Message based routing",
+      "title": "Bulk Publishing",
       "description": "",
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/04-advanced/routing.md"
+          "path": "/.demo/slides/04-advanced/bulk-publishing.md"
         }
       ],
       "icons": {

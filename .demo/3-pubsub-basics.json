@@ -61,6 +61,20 @@
       }
     },
     {
+      "title": "Programmatic as Bytes",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/03-pubsub/programmatic.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
       "title": "Streaming",
       "description": "",
       "steps": [
