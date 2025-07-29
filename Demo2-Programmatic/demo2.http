@@ -1,4 +1,7 @@
 ### Programmatic Subscription
 @senderUrl=http://localhost:5233
-### Send
+### Send as JSON
 POST {{senderUrl}}/send
+
+### Send as Bytes
+POST {{senderUrl}}/sendasbytes
