@@ -6,11 +6,11 @@ common:
 apps:
   - appID: sender
     appDirPath: SenderService
-    appPort: 5231
-    daprHTTPPort: 3531
+    appPort: 5235
+    daprHTTPPort: 3535
     command: ["dotnet", "run"]
   - appID: receiver
     appDirPath: ReceiverService
-    appPort: 5230
-    daprHTTPPort: 3530
+    appPort: 5234
+    daprHTTPPort: 3534
     command: ["dotnet", "run"]
