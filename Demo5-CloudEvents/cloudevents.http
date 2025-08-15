@@ -1,0 +1,7 @@
+### Programmatic Subscription
+@senderUrl=http://localhost:5233
+### Send
+POST {{senderUrl}}/send
+
+### Send with custom metadata
+POST {{senderUrl}}/sendwithmetadata
