@@ -1,5 +1,3 @@
-using System.Net.Mime;
-using System.Text.Json;
 using Dapr.Client;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,8 +28,7 @@ app.MapPost("/sendwithmetadata", async (
         // See https://docs.dapr.io/developing-applications/building-blocks/pubsub/pubsub-cloudevents/
         // For more CloudEvent metadata
         var metadata = new Dictionary<string, string>() {
-            { "cloudevent.subject", "special-case" },
-            { "cloudevent.mycustomfield", "This is cool" }
+            { "cloudevent.type", "special.type" }  // This overrides the built-in Dapr type
         };
 
         await daprClient.PublishEventAsync(

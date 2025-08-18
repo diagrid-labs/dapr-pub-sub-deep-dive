@@ -3,5 +3,5 @@
 ### Send
 POST {{senderUrl}}/send
 
-### Send with custom metadata
+### Send with metadata
 POST {{senderUrl}}/sendwithmetadata
