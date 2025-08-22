@@ -9,8 +9,13 @@ apps:
     appPort: 5233
     daprHTTPPort: 3533
     command: ["dotnet", "run"]
-  - appID: receiver
-    appDirPath: ReceiverService
+  - appID: receiver1
+    appDirPath: ReceiverService1
     appPort: 5232
     daprHTTPPort: 3532
+    command: ["dotnet", "run"]
+  - appID: receiver2
+    appDirPath: ReceiverService2
+    appPort: 5234
+    daprHTTPPort: 3534
     command: ["dotnet", "run"]
