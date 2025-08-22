@@ -1,0 +1,16 @@
+apiVersion: dapr.io/v1alpha1
+kind: Resiliency
+metadata:
+  name: resiliency-policy1
+spec:
+  policies:
+    retries:
+      pubsubRetry:
+        policy: constant
+        duration: 2s
+        maxRetries: 10
+  targets:
+    components:
+      demo7-pubsub:
+        inbound:
+          retry: pubsubRetry
