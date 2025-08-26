@@ -1,0 +1,10 @@
+### Resiliency
+@senderUrl=http://localhost:5233
+### Send Type 1
+POST {{senderUrl}}/send
+Content-Type: application/json
+
+{
+  "id": "{{ $guid }}",
+  "timeStamp": "{{ $datetime iso8601 }}"
+}

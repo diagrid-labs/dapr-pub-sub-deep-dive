@@ -5,12 +5,20 @@ metadata:
 spec:
   policies:
     retries:
-      pubsubRetry:
+      pubsubRetry5xx:
         policy: constant
-        duration: 2s
+        duration: 1s
         maxRetries: 10
+        matching:
+          httpStatusCodes: 500-599
+      pubsubRetryExp:
+        policy: exponential
+        maxInterval: 60s
+        maxRetries: -1
   targets:
     components:
       demo7-pubsub:
         inbound:
-          retry: pubsubRetry
+          retry: pubsubRetry5xx
+        outbound:
+          retry: pubsubRetryExp
