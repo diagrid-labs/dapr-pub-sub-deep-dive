@@ -1,0 +1,18 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: demo8-statestore
+spec:
+  type: state.redis
+  version: v1
+  metadata:
+  - name: redisHost
+    value: localhost:6379
+  - name: redisPassword
+    value: ""
+  - name: outboxPublishPubsub # Required
+    value: "demo8-pubsub"
+  - name: outboxPublishTopic # Required
+    value: "state-changes"
+  - name: outboxDiscardWhenMissingState
+    value: "true"

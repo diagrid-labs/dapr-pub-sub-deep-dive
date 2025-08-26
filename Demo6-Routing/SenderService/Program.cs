@@ -12,10 +12,6 @@ const string TopicName = "incoming-messages";
 app.MapPost("/send", async (
     TinyMessage message, DaprClient daprClient) => {
 
-        // var metadata = new Dictionary<string, string>() {
-        //     { "cloudevent.type", message.Type }
-        // };
-
         await daprClient.PublishEventAsync(
             PubSubComponentName,
             TopicName,

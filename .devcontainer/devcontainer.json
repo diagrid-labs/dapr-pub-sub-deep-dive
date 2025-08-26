@@ -12,7 +12,8 @@
 			"extensions": [
 				"eliostruyf.vscode-demo-time",
 				"ms-dotnettools.csdevkit",
-				"humao.rest-client"
+				"humao.rest-client",
+				"cweijan.vscode-database-client2"
 			]
 		}
 	},

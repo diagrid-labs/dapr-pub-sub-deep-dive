@@ -1,6 +1,6 @@
 ### Resiliency
 @senderUrl=http://localhost:5233
-### Send Type 1
+### Send
 POST {{senderUrl}}/send
 Content-Type: application/json
 

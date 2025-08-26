@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo6-Routing", "Demo6-Rout
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo7-Resiliency", "Demo7-Resiliency", "{2D5A711D-3E0D-7C91-3827-8372401160E0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo8-Outbox", "Demo8-Outbox", "{549DBE5E-830B-1C5D-EDCF-9910FA2CD906}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiverService", "Demo1-Declarative\ReceiverService\ReceiverService.csproj", "{1EB0CD25-AD02-FB18-599D-BCD8D427D91B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenderService", "Demo1-Declarative\SenderService\SenderService.csproj", "{C77806A4-3C21-67E2-4591-A5CCD64F7D27}"
@@ -47,6 +49,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiverService", "Demo7-Resiliency\ReceiverService\ReceiverService.csproj", "{09CA7D0F-AFB1-1D6C-883F-FD5625844ED4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenderService", "Demo7-Resiliency\SenderService\SenderService.csproj", "{4218A89C-E3F0-87D4-8CFC-7A3B6D88BC82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiverService", "Demo8-Outbox\ReceiverService\ReceiverService.csproj", "{E96520BB-EFE9-A925-11A7-A9B3F394D0B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenderService", "Demo8-Outbox\SenderService\SenderService.csproj", "{6D1F881D-BE1B-5FD2-F57F-6A0AF034ADCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -118,6 +124,14 @@ Global
 		{4218A89C-E3F0-87D4-8CFC-7A3B6D88BC82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4218A89C-E3F0-87D4-8CFC-7A3B6D88BC82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4218A89C-E3F0-87D4-8CFC-7A3B6D88BC82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E96520BB-EFE9-A925-11A7-A9B3F394D0B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E96520BB-EFE9-A925-11A7-A9B3F394D0B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E96520BB-EFE9-A925-11A7-A9B3F394D0B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E96520BB-EFE9-A925-11A7-A9B3F394D0B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D1F881D-BE1B-5FD2-F57F-6A0AF034ADCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D1F881D-BE1B-5FD2-F57F-6A0AF034ADCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D1F881D-BE1B-5FD2-F57F-6A0AF034ADCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D1F881D-BE1B-5FD2-F57F-6A0AF034ADCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -139,8 +153,10 @@ Global
 		{C0043EAD-BF8C-E32A-11FC-8DA77A393FAA} = {2D5A711D-3E0D-7C91-3827-8372401160E0}
 		{09CA7D0F-AFB1-1D6C-883F-FD5625844ED4} = {2D5A711D-3E0D-7C91-3827-8372401160E0}
 		{4218A89C-E3F0-87D4-8CFC-7A3B6D88BC82} = {2D5A711D-3E0D-7C91-3827-8372401160E0}
+		{E96520BB-EFE9-A925-11A7-A9B3F394D0B2} = {549DBE5E-830B-1C5D-EDCF-9910FA2CD906}
+		{6D1F881D-BE1B-5FD2-F57F-6A0AF034ADCC} = {549DBE5E-830B-1C5D-EDCF-9910FA2CD906}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {45AB11F9-762D-4389-90BA-98BBA3896A0D}
+		SolutionGuid = {FE280905-BB3D-470E-8E00-993F74272454}
 	EndGlobalSection
 EndGlobal

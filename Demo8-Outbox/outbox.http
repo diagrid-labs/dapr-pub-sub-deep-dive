@@ -1,0 +1,10 @@
+### Outbox
+@senderUrl=http://localhost:5231
+### Save
+POST {{senderUrl}}/save
+Content-Type: application/json
+
+{
+  "id": "key1",
+  "timeStamp": "{{ $datetime iso8601 }}"
+}

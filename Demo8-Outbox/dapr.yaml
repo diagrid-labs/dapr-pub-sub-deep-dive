@@ -1,0 +1,16 @@
+version: 1
+common:
+  resourcesPath: Resources
+  appLogDestination: fileAndConsole
+  daprdLogDestination: fileAndConsole
+apps:
+  - appID: sender
+    appDirPath: SenderService
+    appPort: 5231
+    daprHTTPPort: 3531
+    command: ["dotnet", "run"]
+  - appID: receiver
+    appDirPath: ReceiverService
+    appPort: 5230
+    daprHTTPPort: 3530
+    command: ["dotnet", "run"]
