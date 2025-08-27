@@ -19,7 +19,62 @@
       }
     },
     {
-      "title": "3 ways of doing Pub/Sub",
+      "title": "Publishing pubsub.yaml",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusSideBar"
+        },
+        {
+          "action": "open",
+          "path": "Demo1-Declarative/Resources/pubsub.yaml",
+          "position": "12",
+          "highlightWholeLine": true
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meucexdc-7a1u"
+    },
+    {
+      "title": "Publishing JSON",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "Demo1-Declarative/SenderService/Program.cs",
+          "position": "12",
+          "highlightWholeLine": true
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meuc0enp-v4pj"
+    },
+    {
+      "title": "Publishing Bytes",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "Demo1-Declarative/SenderService/Program.cs",
+          "position": "25",
+          "highlightWholeLine": true
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meuc7xmt-q7de"
+    },
+    {
+      "title": "3 ways of doing subscriptions",
       "description": "",
       "steps": [
         {
@@ -47,6 +102,112 @@
       }
     },
     {
+      "title": "Declarative Program.cs",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusSideBar"
+        },
+        {
+          "action": "open",
+          "path": "Demo1-Declarative/ReceiverService/Program.cs"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Declarative subscription.yaml",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo1-Declarative/Resources/subscription.yaml"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubz02u-rulm"
+    },
+    {
+      "title": "Demo 1: Start services",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo1-Declarative",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 75
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 75
+        },
+        {
+          "action": "open",
+          "path": "Demo1-Declarative/dapr.yaml"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo 1: Publish message",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo1-Declarative/declarative.http"
+        }
+      ],
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo 1: Stop services",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "."
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "\u0003"
+          }
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd ..",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 75
+        }
+      ]
+    },
+    {
       "title": "Programmatic",
       "description": "",
       "steps": [
@@ -61,12 +222,99 @@
       }
     },
     {
-      "title": "Programmatic as Bytes",
+      "title": "Programmatic Program.cs",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo2-Programmatic/ReceiverService/Program.cs"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubuq7h-0i48"
+    },
+    {
+      "title": "Demo 2: Start services",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo2-Programmatic",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 75
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 75
+        },
+        {
+          "action": "open",
+          "path": "Demo2-Programmatic/dapr.yaml"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo 2: Publish message",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo2-Programmatic/programmatic.http"
+        }
+      ],
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo 2: Stop services",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "."
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "\u0003"
+          }
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd ..",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 75
+        }
+      ]
+    },
+    {
+      "title": "Streaming",
       "description": "",
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/03-pubsub/programmatic.md"
+          "path": ".demo/slides/03-pubsub/streaming.md"
         }
       ],
       "icons": {
@@ -75,18 +323,91 @@
       }
     },
     {
-      "title": "Streaming",
+      "title": "Streaming Program.cs",
       "description": "",
       "steps": [
         {
-          "action": "openSlide",
-          "path": "/.demo/slides/03-pubsub/streaming.md"
+          "action": "open",
+          "path": "Demo3-Streaming/ReceiverService/Program.cs"
         }
       ],
       "icons": {
-        "start": "vm",
+        "start": "code",
         "end": "pass-filled"
-      }
+      },
+      "id": "demo-meuea7e7-qm70"
+    },
+    {
+      "title": "Demo 3: Start services",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo3-Streaming",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 75
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 75
+        },
+        {
+          "action": "open",
+          "path": "Demo3-Streaming/dapr.yaml"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo 3: Publish message",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo3-Streaming/streaming.http"
+        }
+      ],
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo 3: Stop services",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "."
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "\u0003"
+          }
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd ..",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 75
+        }
+      ]
     },
     {
       "title": "Switch the message broker",

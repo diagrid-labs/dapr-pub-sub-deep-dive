@@ -3,5 +3,3 @@
 ### Send as JSON
 POST {{senderUrl}}/send
 
-### Send as Bytes
-POST {{senderUrl}}/sendasbytes
