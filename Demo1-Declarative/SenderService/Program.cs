@@ -13,9 +13,9 @@ app.MapPost("/send", async (
     DaprClient daprClient) => {
         var message = new TinyMessage(Guid.NewGuid(), DateTimeOffset.UtcNow);
         await daprClient.PublishEventAsync(
-            PubSubComponentName,
-            TopicName,
-            message);
+            pubsubName: PubSubComponentName,
+            topicName: TopicName,
+            data: message);
         Console.WriteLine($"Sent message {message.Id}.");
 
         return Results.Created(message.Id.ToString(), value: null);
@@ -26,7 +26,11 @@ app.MapPost("/sendasbytes", async (
     DaprClient daprClient) => {
         var message = new TinyMessage(Guid.NewGuid(), DateTimeOffset.UtcNow);
         var content = JsonSerializer.SerializeToUtf8Bytes(message);
-        await daprClient.PublishByteEventAsync(PubSubComponentName, TopicName, content.AsMemory(), MediaTypeNames.Application.Json, new Dictionary<string, string> { });
+        await daprClient.PublishByteEventAsync(
+            pubsubName: PubSubComponentName,
+            topicName: TopicName,
+            data: content.AsMemory(),
+            dataContentType: MediaTypeNames.Application.Json);
         Console.WriteLine($"Sent message {message.Id}.");
 
         return Results.Created(message.Id.ToString(), value: null);

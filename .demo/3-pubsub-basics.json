@@ -19,27 +19,6 @@
       }
     },
     {
-      "title": "Publishing pubsub.yaml",
-      "description": "",
-      "steps": [
-        {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.focusSideBar"
-        },
-        {
-          "action": "open",
-          "path": "Demo1-Declarative/Resources/pubsub.yaml",
-          "position": "12",
-          "highlightWholeLine": true
-        }
-      ],
-      "icons": {
-        "start": "code",
-        "end": "pass-filled"
-      },
-      "id": "demo-meucexdc-7a1u"
-    },
-    {
       "title": "Publishing JSON",
       "description": "",
       "steps": [
@@ -72,6 +51,261 @@
         "end": "pass-filled"
       },
       "id": "demo-meuc7xmt-q7de"
+    },
+    {
+      "title": "Publishing pubsub.yaml",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusSideBar"
+        },
+        {
+          "action": "open",
+          "path": "Demo1-Declarative/Resources/pubsub.yaml",
+          "position": "12",
+          "highlightWholeLine": true
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meucexdc-7a1u"
+    },
+    {
+      "title": "Demo Pub/Sub Redis: Start services",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo1-Declarative",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 150
+        },
+        {
+          "action": "open",
+          "path": "Demo1-Declarative/dapr.yaml"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo Pub/Sub Redis: Check component init",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.focusFind"
+        },
+        {
+          "action": "typeText",
+          "content": "pubsub.redis",
+          "insertTypingSpeed": 100
+        }
+      ],
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo Pub/Sub Redis: Publish message",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo1-Declarative/declarative.http"
+        }
+      ],
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo Pub/Sub Redis: Stop services",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "\u0003"
+        },
+        // {
+        //   "action": "executeVSCodeCommand",
+        //   "command": "workbench.action.terminal.sendSequence",
+        //   "args": {
+        //     "text": "\u0003"
+        //   }
+        // },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd ..",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        }
+      ]
+    },
+    {
+      "title": "Switch to RabbitMQ",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "rename",
+          "path": "Demo1-Declarative/Resources/pubsub-rabbitmq.yaml.temp",
+          "dest": "Demo1-Declarative/Resources/pubsub-rabbitmq.yaml"
+        },
+        {
+          "action": "rename",
+          "path": "Demo1-Declarative/Resources/pubsub.yaml",
+          "dest": "Demo1-Declarative/Resources/pubsub.yaml.temp"
+        },
+        {
+          "action": "open",
+          "path": "Demo1-Declarative/Resources/pubsub-rabbitmq.yaml"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "rabbitmq",
+          "command": "docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4-management"
+        }
+      ]
+    },
+    {
+      "title": "Demo Pub/Sub RabbitMQ: Start services",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo1-Declarative",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 150
+        },
+        {
+          "action": "open",
+          "path": "Demo1-Declarative/dapr.yaml"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo Pub/Sub RabbitMQ: Check component init",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.focusFind"
+        },
+        {
+          "action": "typeText",
+          "content": "pubsub.rabbitmq",
+          "insertTypingSpeed": 100
+        }
+      ],
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo Pub/Sub RabbitMQ: Publish message",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo1-Declarative/declarative.http"
+        }
+      ],
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo Pub/Sub RabbitMQ: Stop services",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "rabbitmq",
+          "command": "\u0003"
+        },
+        // {
+        //   "action": "executeVSCodeCommand",
+        //   "command": "workbench.action.terminal.sendSequence",
+        //   "args": {
+        //     "text": "\u0003"
+        //   }
+        // },
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "\u0003"
+        },
+        // {
+        //   "action": "executeVSCodeCommand",
+        //   "command": "workbench.action.terminal.sendSequence",
+        //   "args": {
+        //     "text": "\u0003"
+        //   }
+        // },
+        {
+          "action": "rename",
+          "path": "Demo1-Declarative/Resources/pubsub-rabbitmq.yaml",
+          "dest": "Demo1-Declarative/Resources/pubsub-rabbitmq.yaml.temp"
+        },
+        {
+          "action": "rename",
+          "path": "Demo1-Declarative/Resources/pubsub.yaml.temp",
+          "dest": "Demo1-Declarative/Resources/pubsub.yaml"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd ..",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        }
+      ]
     },
     {
       "title": "3 ways of doing subscriptions",
@@ -136,7 +370,7 @@
       "id": "demo-meubz02u-rulm"
     },
     {
-      "title": "Demo 1: Start services",
+      "title": "Demo Declarative: Start services",
       "description": "",
       "steps": [
         {
@@ -144,14 +378,14 @@
           "command": "cd Demo1-Declarative",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
-          "insertTypingSpeed": 75
+          "insertTypingSpeed": 50
         },
         {
           "action": "executeTerminalCommand",
           "command": "dapr run -f .",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
-          "insertTypingSpeed": 75
+          "insertTypingSpeed": 150
         },
         {
           "action": "open",
@@ -165,7 +399,7 @@
       "id": "demo-meubp1sr-cm5k"
     },
     {
-      "title": "Demo 1: Publish message",
+      "title": "Demo Declarative: Publish message",
       "description": "",
       "steps": [
         {
@@ -180,7 +414,7 @@
       "id": "demo-meubp1sr-cm5k"
     },
     {
-      "title": "Demo 1: Stop services",
+      "title": "Demo Declarative: Stop services",
       "icons": {
         "start": "terminal-cmd",
         "end": "pass-filled"
@@ -189,15 +423,15 @@
         {
           "action": "executeTerminalCommand",
           "terminalId": "dapr-run",
-          "command": "."
+          "command": "\u0003"
         },
-        {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.terminal.sendSequence",
-          "args": {
-            "text": "\u0003"
-          }
-        },
+        // {
+        //   "action": "executeVSCodeCommand",
+        //   "command": "workbench.action.terminal.sendSequence",
+        //   "args": {
+        //     "text": "\u0003"
+        //   }
+        // },
         {
           "action": "executeTerminalCommand",
           "command": "cd ..",
