@@ -10,7 +10,8 @@
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/03-pubsub/publishing.md"
+          "path": "/.demo/slides/03-pubsub/publishing.md",
+          "slide": 1
         }
       ],
       "icons": {
@@ -149,13 +150,6 @@
           "terminalId": "dapr-run",
           "command": "\u0003"
         },
-        // {
-        //   "action": "executeVSCodeCommand",
-        //   "command": "workbench.action.terminal.sendSequence",
-        //   "args": {
-        //     "text": "\u0003"
-        //   }
-        // },
         {
           "action": "executeTerminalCommand",
           "command": "cd ..",
@@ -269,25 +263,11 @@
           "terminalId": "rabbitmq",
           "command": "\u0003"
         },
-        // {
-        //   "action": "executeVSCodeCommand",
-        //   "command": "workbench.action.terminal.sendSequence",
-        //   "args": {
-        //     "text": "\u0003"
-        //   }
-        // },
         {
           "action": "executeTerminalCommand",
           "terminalId": "dapr-run",
           "command": "\u0003"
         },
-        // {
-        //   "action": "executeVSCodeCommand",
-        //   "command": "workbench.action.terminal.sendSequence",
-        //   "args": {
-        //     "text": "\u0003"
-        //   }
-        // },
         {
           "action": "rename",
           "path": "Demo1-Declarative/Resources/pubsub-rabbitmq.yaml",
@@ -313,7 +293,8 @@
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/03-pubsub/3-ways.md"
+          "path": "/.demo/slides/03-pubsub/3-ways.md",
+          "slide": 1
         }
       ],
       "icons": {
@@ -327,7 +308,8 @@
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/03-pubsub/declarative.md"
+          "path": "/.demo/slides/03-pubsub/declarative.md",
+          "slide": 1
         }
       ],
       "icons": {
@@ -425,13 +407,6 @@
           "terminalId": "dapr-run",
           "command": "\u0003"
         },
-        // {
-        //   "action": "executeVSCodeCommand",
-        //   "command": "workbench.action.terminal.sendSequence",
-        //   "args": {
-        //     "text": "\u0003"
-        //   }
-        // },
         {
           "action": "executeTerminalCommand",
           "command": "cd ..",
@@ -447,7 +422,8 @@
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/03-pubsub/programmatic.md"
+          "path": "/.demo/slides/03-pubsub/programmatic.md",
+          "slide": 1
         }
       ],
       "icons": {
@@ -471,7 +447,7 @@
       "id": "demo-meubuq7h-0i48"
     },
     {
-      "title": "Demo 2: Start services",
+      "title": "Demo Programmatic: Start services",
       "description": "",
       "steps": [
         {
@@ -500,7 +476,7 @@
       "id": "demo-meubp1sr-cm5k"
     },
     {
-      "title": "Demo 2: Publish message",
+      "title": "Demo Programmatic: Publish message",
       "description": "",
       "steps": [
         {
@@ -515,7 +491,7 @@
       "id": "demo-meubp1sr-cm5k"
     },
     {
-      "title": "Demo 2: Stop services",
+      "title": "Demo Programmatic: Stop services",
       "icons": {
         "start": "terminal-cmd",
         "end": "pass-filled"
@@ -548,7 +524,8 @@
       "steps": [
         {
           "action": "openSlide",
-          "path": ".demo/slides/03-pubsub/streaming.md"
+          "path": ".demo/slides/03-pubsub/streaming.md",
+          "slide": 1
         }
       ],
       "icons": {
@@ -572,7 +549,7 @@
       "id": "demo-meuea7e7-qm70"
     },
     {
-      "title": "Demo 3: Start services",
+      "title": "Demo Streaming: Start services",
       "description": "",
       "steps": [
         {
@@ -580,14 +557,14 @@
           "command": "cd Demo3-Streaming",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
-          "insertTypingSpeed": 75
+          "insertTypingSpeed": 50
         },
         {
           "action": "executeTerminalCommand",
           "command": "dapr run -f .",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
-          "insertTypingSpeed": 75
+          "insertTypingSpeed": 150
         },
         {
           "action": "open",
@@ -601,7 +578,7 @@
       "id": "demo-meubp1sr-cm5k"
     },
     {
-      "title": "Demo 3: Publish message",
+      "title": "Demo Streaming: Publish message",
       "description": "",
       "steps": [
         {
@@ -616,7 +593,7 @@
       "id": "demo-meubp1sr-cm5k"
     },
     {
-      "title": "Demo 3: Stop services",
+      "title": "Demo Streaming: Stop services",
       "icons": {
         "start": "terminal-cmd",
         "end": "pass-filled"
@@ -625,37 +602,16 @@
         {
           "action": "executeTerminalCommand",
           "terminalId": "dapr-run",
-          "command": "."
-        },
-        {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.terminal.sendSequence",
-          "args": {
-            "text": "\u0003"
-          }
+          "command": "\u0003"
         },
         {
           "action": "executeTerminalCommand",
           "command": "cd ..",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
-          "insertTypingSpeed": 75
+          "insertTypingSpeed": 50
         }
       ]
-    },
-    {
-      "title": "Switch the message broker",
-      "description": "",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/03-pubsub/switch-components.md"
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
     }
   ]
 }
