@@ -1,4 +1,10 @@
-### Programmatic Subscription
+### Streaming Subscription
 @senderUrl=http://localhost:5235
 ### Send
 POST {{senderUrl}}/send
+Content-Type: application/json
+
+{
+    "id": "{{$guid}}",
+    "timeStamp": "{{$datetime iso8601}}"
+}

@@ -1,4 +1,20 @@
-### Declarative Subscription
+### Bulk Publish
 @senderUrl=http://localhost:5237
 ### Send
 POST {{senderUrl}}/send
+Content-Type: application/json
+
+[
+    {
+        "id": "{{$guid}}",
+        "timeStamp": "{{$datetime iso8601}}"
+    },
+    {
+        "id": "{{$guid}}",
+        "timeStamp": "{{$datetime iso8601}}"
+    },
+    {
+        "id": "{{$guid}}",
+        "timeStamp": "{{$datetime iso8601}}"
+    }
+]

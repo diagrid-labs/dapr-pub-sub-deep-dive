@@ -8,19 +8,13 @@ const string PubSubComponentName = "demo1-pubsub";
 const string TopicName = "incoming-messages";
 
 app.MapPost("/send", async (
-    DaprClient daprClient) =>
-{
-    var bulkMessages = new List<TinyMessage>
-        {
-            new TinyMessage(Guid.NewGuid(), DateTimeOffset.UtcNow),
-            new TinyMessage(Guid.NewGuid(), DateTimeOffset.UtcNow),
-            new TinyMessage(Guid.NewGuid(), DateTimeOffset.UtcNow)
-        };
+    List<TinyMessage> messages,
+    DaprClient daprClient) => {
 
     var bulkPublishResponse = await daprClient.BulkPublishEventAsync(
             PubSubComponentName,
             TopicName,
-            bulkMessages);
+            messages);
 
     if (bulkPublishResponse != null)
     {
@@ -38,18 +32,17 @@ app.MapPost("/send", async (
         else
         {
             Console.WriteLine("Published multiple events!");
-            var joinedIds = string.Join(",", bulkMessages.Select(m => m.Id.ToString()));
-            return Results.Created(joinedIds, value: null);
+
+            return Results.Accepted(string.Empty, messages.Select(m => m.Id));
         }
     }
     else
     {
         throw new Exception("null response from dapr");
     }
-}
-);
+});
 
 
 app.Run();
 
-record TinyMessage(Guid Id, DateTimeOffset TimeStamp);
+record TinyMessage(string Id, DateTimeOffset TimeStamp);

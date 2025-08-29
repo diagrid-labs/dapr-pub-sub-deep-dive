@@ -10,8 +10,8 @@ app.MapSubscribeHandler();
 const string PUBSUB_NAME = "demo2-pubsub";
 const string TOPIC_NAME = "incoming-messages";
 
-app.MapPost("/messagehandler", [Topic(PUBSUB_NAME, TOPIC_NAME)](
-    TinyMessage message) => {
+app.MapPost("/messagehandler",
+    [Topic(PUBSUB_NAME, TOPIC_NAME)] (TinyMessage message) => {
     Console.WriteLine($"Received message {message.Id}.");
 
     return Results.Accepted();
@@ -19,4 +19,4 @@ app.MapPost("/messagehandler", [Topic(PUBSUB_NAME, TOPIC_NAME)](
 
 app.Run();
 
-record TinyMessage(Guid Id, DateTimeOffset TimeStamp);
+record TinyMessage(string Id, DateTimeOffset TimeStamp);

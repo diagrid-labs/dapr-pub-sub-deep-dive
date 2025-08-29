@@ -2,4 +2,9 @@
 @senderUrl=http://localhost:5233
 ### Send as JSON
 POST {{senderUrl}}/send
+Content-Type: application/json
 
+{
+    "id": "{{$guid}}",
+    "timeStamp": "{{$datetime iso8601}}"
+}

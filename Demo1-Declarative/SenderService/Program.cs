@@ -10,21 +10,21 @@ const string PubSubComponentName = "demo1-pubsub";
 const string TopicName = "incoming-messages";
 
 app.MapPost("/send", async (
+    TinyMessage message,
     DaprClient daprClient) => {
-        var message = new TinyMessage(Guid.NewGuid(), DateTimeOffset.UtcNow);
         await daprClient.PublishEventAsync(
             pubsubName: PubSubComponentName,
             topicName: TopicName,
             data: message);
         Console.WriteLine($"Sent message {message.Id}.");
 
-        return Results.Created(message.Id.ToString(), value: null);
+        return Results.Accepted(string.Empty, message.Id);
     }
 );
 
 app.MapPost("/sendasbytes", async (
+    TinyMessage message,
     DaprClient daprClient) => {
-        var message = new TinyMessage(Guid.NewGuid(), DateTimeOffset.UtcNow);
         var content = JsonSerializer.SerializeToUtf8Bytes(message);
         await daprClient.PublishByteEventAsync(
             pubsubName: PubSubComponentName,
@@ -33,7 +33,7 @@ app.MapPost("/sendasbytes", async (
             dataContentType: MediaTypeNames.Application.Json);
         Console.WriteLine($"Sent message {message.Id}.");
 
-        return Results.Created(message.Id.ToString(), value: null);
+        return Results.Accepted(string.Empty, message.Id);
     }
 );
 
