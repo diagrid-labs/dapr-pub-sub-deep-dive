@@ -4,8 +4,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDaprClient();
 var app = builder.Build();
 
-const string PubSubComponentName = "demo1-pubsub";
-const string TopicName = "incoming-messages";
+const string PubSubComponentName = "demo4-pubsub";
+const string TopicName = "incoming-messages-bulk";
 
 app.MapPost("/send", async (
     List<TinyMessage> messages,

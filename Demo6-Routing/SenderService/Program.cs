@@ -17,7 +17,7 @@ app.MapPost("/send", async (
             message);
         Console.WriteLine($"Sent message {message.Id} with type {message.Type}.");
 
-        return Results.Created(message.Id.ToString(), value: null);
+        return Results.Accepted(string.Empty, message.Id);
     }
 );
 
