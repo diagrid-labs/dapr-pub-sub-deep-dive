@@ -4,7 +4,7 @@ metadata:
   name: receiver-sub
 spec:
   pubsubname: demo6-pubsub
-  topic: incoming-messages
+  topic: incoming-messages-routing
   routes:
     rules:
       - match: event.data.type == "dapr.demo.type2"

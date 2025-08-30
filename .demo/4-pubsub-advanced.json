@@ -10,7 +10,8 @@
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/04-advanced/bulk-publishing.md"
+          "path": "/.demo/slides/04-advanced/bulk-publishing.md",
+          "slide": 1
         }
       ],
       "icons": {
@@ -104,7 +105,8 @@
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/04-advanced/cloud-events.md"
+          "path": "/.demo/slides/04-advanced/cloud-events.md",
+          "slide": 1
         }
       ],
       "icons": {
@@ -213,7 +215,8 @@
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/04-advanced/routing.md"
+          "path": "/.demo/slides/04-advanced/routing.md",
+          "slide": 1
         }
       ],
       "icons": {
@@ -222,12 +225,123 @@
       }
     },
     {
+      "title": "Routing Sender Program.cs",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo6-Routing/SenderService/Program.cs"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meuea7e7-qm7§0"
+    },
+    {
+      "title": "Routing Receiver1 Program.cs",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo6-Routing/ReceiverService1/Program.cs"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meuea7e7-qm7§0"
+    },
+    {
+      "title": "Routing Receiver2 Program.cs",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo6-Routing/ReceiverService2/Program.cs"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meuea7e7-qm7§0"
+    },
+    {
+      "title": "Demo Routing: Start services",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo6-Routing",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 150
+        },
+        {
+          "action": "open",
+          "path": "Demo6-Routing/dapr.yaml"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo Routing: Publish message",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo6-Routing/routing.http"
+        }
+      ],
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo Routing: Stop services",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "\u0003"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd ..",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        }
+      ]
+    },
+    {
       "title": "Outbox Pattern",
       "description": "",
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/04-advanced/outbox-pattern.md"
+          "path": "/.demo/slides/04-advanced/outbox-pattern.md",
+          "slide": 1
         }
       ],
       "icons": {
@@ -241,7 +355,8 @@
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/04-advanced/workflows.md"
+          "path": "/.demo/slides/04-advanced/workflows.md",
+          "slide": 1
         }
       ],
       "icons": {

@@ -1,5 +1,3 @@
-using System.Net.Mime;
-using System.Text.Json;
 using Dapr.Client;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,10 +5,11 @@ builder.Services.AddDaprClient();
 var app = builder.Build();
 
 const string PubSubComponentName = "demo6-pubsub";
-const string TopicName = "incoming-messages";
+const string TopicName = "incoming-messages-routing";
 
 app.MapPost("/send", async (
-    TinyMessage message, DaprClient daprClient) => {
+    TinyMessage message,
+    DaprClient daprClient) => {
 
         await daprClient.PublishEventAsync(
             PubSubComponentName,
