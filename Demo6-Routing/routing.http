@@ -1,4 +1,4 @@
-### Programmatic Subscription
+### Routing
 @senderUrl=http://localhost:5233
 ### Send Type 1
 POST {{senderUrl}}/send

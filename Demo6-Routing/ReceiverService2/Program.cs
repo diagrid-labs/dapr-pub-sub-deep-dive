@@ -20,4 +20,4 @@ app.MapPost("/handletype2", (
 
 app.Run();
 
-record TinyMessage(string Id, DateTime TimeStamp, string Type, int Amount = 0);
+record TinyMessage(Guid Id, DateTime TimeStamp, string Type, int Amount = 0);

@@ -30,4 +30,4 @@ app.MapPost("/handlelargeamount", [Topic(PUBSUB_NAME, TOPIC_NAME, ROUTE_TYPE1_LA
 
 app.Run();
 
-record TinyMessage(string Id, DateTime TimeStamp, string Type, int Amount = 0);
+record TinyMessage(Guid Id, DateTime TimeStamp, string Type, int Amount = 0);

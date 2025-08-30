@@ -24,4 +24,4 @@ app.MapPost("/send", async (
 
 app.Run();
 
-record TinyMessage(string Id, DateTime TimeStamp);
+record TinyMessage(Guid Id, DateTime TimeStamp);

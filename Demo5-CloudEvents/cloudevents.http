@@ -1,4 +1,4 @@
-### Programmatic Subscription
+### CloudEvents
 @senderUrl=http://localhost:5233
 ### Send
 POST {{senderUrl}}/send
