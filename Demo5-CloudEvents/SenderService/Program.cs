@@ -8,23 +8,21 @@ const string PubSubComponentName = "demo5-pubsub";
 const string TopicName = "incoming-messages";
 
 app.MapPost("/send", async (
+    TinyMessage message,
     DaprClient daprClient) => {
-        var message = new TinyMessage(Guid.NewGuid(), DateTimeOffset.UtcNow);
-
         await daprClient.PublishEventAsync(
             PubSubComponentName,
             TopicName,
             message);
         Console.WriteLine($"Sent message {message.Id}.");
 
-        return Results.Created(message.Id.ToString(), value: null);
+        return Results.Created(string.Empty, message.Id);
     }
 );
 
 app.MapPost("/sendwithmetadata", async (
+    TinyMessage message,
     DaprClient daprClient) => {
-        var message = new TinyMessage(Guid.NewGuid(), DateTimeOffset.UtcNow);
-
         // See https://docs.dapr.io/developing-applications/building-blocks/pubsub/pubsub-cloudevents/
         // For more CloudEvent metadata
         var metadata = new Dictionary<string, string>() {
@@ -38,7 +36,7 @@ app.MapPost("/sendwithmetadata", async (
             metadata);
         Console.WriteLine($"Sent message {message.Id}.");
 
-        return Results.Created(message.Id.ToString(), value: null);
+        return Results.Accepted(string.Empty, message.Id);
     }
 );
 

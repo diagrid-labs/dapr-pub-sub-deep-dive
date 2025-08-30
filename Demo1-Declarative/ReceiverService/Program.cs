@@ -13,4 +13,4 @@ app.MapPost("/messagehandler", (
 
 app.Run();
 
-record TinyMessage(string Id, DateTimeOffset TimeStamp);
+record TinyMessage(Guid Id, DateTimeOffset TimeStamp);

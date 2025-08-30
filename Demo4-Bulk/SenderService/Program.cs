@@ -45,4 +45,4 @@ app.MapPost("/send", async (
 
 app.Run();
 
-record TinyMessage(string Id, DateTimeOffset TimeStamp);
+record TinyMessage(Guid Id, DateTimeOffset TimeStamp);
