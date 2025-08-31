@@ -20,12 +20,42 @@
       }
     },
     {
-      "title": "Bulk Program.cs",
+      "title": "Bulk Sender Program.cs",
       "description": "",
       "steps": [
         {
           "action": "open",
           "path": "Demo4-Bulk/SenderService/Program.cs"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meuea7e7-qm70"
+    },
+    {
+      "title": "Bulk Receiver1 Program.cs",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo4-Bulk/ReceiverService1/Program.cs"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meuea7e7-qm70"
+    },
+    {
+      "title": "Bulk Receiver2 Program.cs",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo4-Bulk/ReceiverService2/Program.cs"
         }
       ],
       "icons": {
