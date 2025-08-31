@@ -7,7 +7,7 @@ builder.Services.AddDaprPubSubClient();
 var app = builder.Build();
 
 const string PUBSUB_NAME = "demo3-pubsub";
-const string TOPIC_NAME = "incoming-messages";
+const string TOPIC_NAME = "incoming-messages-streaming";
 
 //Process each message returned from the subscription
 Task<TopicResponseAction> HandleMessageAsync(

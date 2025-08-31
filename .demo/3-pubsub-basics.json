@@ -152,7 +152,7 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..",
+          "command": "cd ..\nclear",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
@@ -280,7 +280,125 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..",
+          "command": "cd ..\nclear",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        }
+      ]
+    },
+    {
+      "title": "Switch to ServiceBus",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "rename",
+          "path": "Demo1-Declarative/Resources/pubsub-servicebus.yaml.temp",
+          "dest": "Demo1-Declarative/Resources/pubsub-servicebus.yaml"
+        },
+        {
+          "action": "rename",
+          "path": "Demo1-Declarative/Resources/pubsub.yaml",
+          "dest": "Demo1-Declarative/Resources/pubsub.yaml.temp"
+        },
+        {
+          "action": "open",
+          "path": "Demo1-Declarative/Resources/pubsub-servicebus.yaml"
+        }
+      ]
+    },
+    {
+      "title": "Demo Pub/Sub ServiceBus: Start services",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo1-Declarative",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 150
+        },
+        {
+          "action": "open",
+          "path": "Demo1-Declarative/dapr.yaml"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo Pub/Sub ServiceBus: Check component init",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.focusFind"
+        },
+        {
+          "action": "typeText",
+          "content": "pubsub.azure.servicebus.topics",
+          "insertTypingSpeed": 50
+        }
+      ],
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo Pub/Sub ServiceBus: Publish message",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo1-Declarative/declarative.http"
+        }
+      ],
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo Pub/Sub ServiceBus: Stop services",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "\u0003"
+        },
+        {
+          "action": "rename",
+          "path": "Demo1-Declarative/Resources/pubsub-servicebus.yaml",
+          "dest": "Demo1-Declarative/Resources/pubsub-servicebus.yaml.temp"
+        },
+        {
+          "action": "rename",
+          "path": "Demo1-Declarative/Resources/pubsub.yaml.temp",
+          "dest": "Demo1-Declarative/Resources/pubsub.yaml"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd ..\nclear",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
@@ -409,7 +527,7 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..",
+          "command": "cd ..\nclear",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 75
@@ -511,7 +629,7 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..",
+          "command": "cd ..\nclear",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 75
@@ -606,7 +724,7 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..",
+          "command": "cd ..\nclear",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50

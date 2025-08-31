@@ -92,7 +92,7 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..",
+          "command": "cd ..\nclear",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
@@ -202,7 +202,7 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..",
+          "command": "cd ..\nclear",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
@@ -327,7 +327,7 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..",
+          "command": "cd ..\nclear",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50

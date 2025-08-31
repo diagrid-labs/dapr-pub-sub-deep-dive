@@ -6,7 +6,7 @@ builder.Services.AddDaprClient();
 var app = builder.Build();
 
 const string PubSubComponentName = "demo2-pubsub";
-const string TopicName = "incoming-messages";
+const string TopicName = "incoming-messages-programmatic";
 
 app.MapPost("/send", async (
     TinyMessage message,

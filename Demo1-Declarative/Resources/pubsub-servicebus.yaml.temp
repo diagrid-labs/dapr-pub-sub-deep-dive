@@ -8,7 +8,10 @@ spec:
   metadata:
   # Required when not using Microsoft Entra ID Authentication
   - name: connectionString
-    value: "Endpoint=sb://{ServiceBusNamespace}.servicebus.windows.net/;SharedAccessKeyName={PolicyName};SharedAccessKey={Key};EntityPath={ServiceBus}"
+    secretKeyRef:
+      name: ServiceBusConnectionString
+      key:  ServiceBusConnectionString
+  #  value: "Endpoint=sb://{ServiceBusNamespace}.servicebus.windows.net/;SharedAccessKeyName={PolicyName};SharedAccessKey={Key};EntityPath={ServiceBus}"
   # - name: consumerID # Optional: defaults to the app's own ID
   #   value: channel1 
   # - name: timeoutInSec # Optional
@@ -41,3 +44,5 @@ spec:
   #   value: 5
   # - name: publishInitialRetryIntervalInMs # Optional
   #   value: 500
+auth:
+  secretStore: localsecretstore

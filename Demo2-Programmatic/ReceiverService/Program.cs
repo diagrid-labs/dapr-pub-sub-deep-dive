@@ -8,7 +8,7 @@ app.UseCloudEvents();
 app.MapSubscribeHandler();
 
 const string PUBSUB_NAME = "demo2-pubsub";
-const string TOPIC_NAME = "incoming-messages";
+const string TOPIC_NAME = "incoming-messages-programmatic";
 
 app.MapPost("/messagehandler",
     [Topic(PUBSUB_NAME, TOPIC_NAME)] (TinyMessage message) => {
