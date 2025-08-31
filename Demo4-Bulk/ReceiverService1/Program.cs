@@ -1,3 +1,5 @@
+using Dapr;
+using Dapr.AspNetCore;
 var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();

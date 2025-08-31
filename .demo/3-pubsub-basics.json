@@ -90,7 +90,7 @@
           "command": "dapr run -f .",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
-          "insertTypingSpeed": 150
+          "insertTypingSpeed": 125
         },
         {
           "action": "open",
@@ -114,7 +114,7 @@
         {
           "action": "typeText",
           "content": "pubsub.redis",
-          "insertTypingSpeed": 100
+          "insertTypingSpeed": 50
         }
       ],
       "icons": {
@@ -203,7 +203,7 @@
           "command": "dapr run -f .",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
-          "insertTypingSpeed": 150
+          "insertTypingSpeed": 125
         },
         {
           "action": "open",
@@ -227,7 +227,7 @@
         {
           "action": "typeText",
           "content": "pubsub.rabbitmq",
-          "insertTypingSpeed": 100
+          "insertTypingSpeed": 50
         }
       ],
       "icons": {
@@ -262,6 +262,11 @@
           "action": "executeTerminalCommand",
           "terminalId": "rabbitmq",
           "command": "\u0003"
+        },
+         {
+          "action": "executeTerminalCommand",
+          "terminalId": "rabbitmq",
+          "command": "clear"
         },
         {
           "action": "executeTerminalCommand",
@@ -326,7 +331,7 @@
           "command": "dapr run -f .",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
-          "insertTypingSpeed": 150
+          "insertTypingSpeed": 125
         },
         {
           "action": "open",
@@ -485,7 +490,7 @@
           "command": "dapr run -f .",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
-          "insertTypingSpeed": 150
+          "insertTypingSpeed": 125
         },
         {
           "action": "open",
@@ -530,7 +535,7 @@
           "command": "cd ..\nclear",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
-          "insertTypingSpeed": 75
+          "insertTypingSpeed": 50
         }
       ]
     },
@@ -573,14 +578,14 @@
           "command": "cd Demo2-Programmatic",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
-          "insertTypingSpeed": 75
+          "insertTypingSpeed": 50
         },
         {
           "action": "executeTerminalCommand",
           "command": "dapr run -f .",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
-          "insertTypingSpeed": 75
+          "insertTypingSpeed": 125
         },
         {
           "action": "open",
@@ -632,7 +637,7 @@
           "command": "cd ..\nclear",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
-          "insertTypingSpeed": 75
+          "insertTypingSpeed": 50
         }
       ]
     },
@@ -682,7 +687,7 @@
           "command": "dapr run -f .",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
-          "insertTypingSpeed": 150
+          "insertTypingSpeed": 125
         },
         {
           "action": "open",

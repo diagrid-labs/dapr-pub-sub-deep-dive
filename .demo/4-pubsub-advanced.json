@@ -50,7 +50,7 @@
           "command": "dapr run -f .",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
-          "insertTypingSpeed": 150
+          "insertTypingSpeed": 125
         },
         {
           "action": "open",
@@ -160,7 +160,7 @@
           "command": "dapr run -f .",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
-          "insertTypingSpeed": 150
+          "insertTypingSpeed": 125
         },
         {
           "action": "open",
@@ -285,7 +285,7 @@
           "command": "dapr run -f .",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
-          "insertTypingSpeed": 150
+          "insertTypingSpeed": 125
         },
         {
           "action": "open",
