@@ -12,7 +12,7 @@ app.MapPost("/save", async (
     TinyMessage message, DaprClient daprClient) => {
 
         var request = new StateTransactionRequest(
-            key: message.Id,
+            key: message.Id.ToString(),
             value: JsonSerializer.SerializeToUtf8Bytes(message), //Encoding.UTF8.GetBytes(message.TimeStamp.ToString()) , //
             operationType: StateOperationType.Upsert,
             metadata: new Dictionary<string, string>  
@@ -36,4 +36,4 @@ app.MapPost("/save", async (
 
 app.Run();
 
-record TinyMessage(string Id, DateTime TimeStamp);
+record TinyMessage(Guid Id, DateTime TimeStamp);

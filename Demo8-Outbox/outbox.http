@@ -5,6 +5,6 @@ POST {{senderUrl}}/save
 Content-Type: application/json
 
 {
-  "id": "key1",
+  "id": "{{ $guid }}",
   "timeStamp": "{{ $datetime iso8601 }}"
 }
