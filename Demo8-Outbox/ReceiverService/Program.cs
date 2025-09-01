@@ -3,16 +3,16 @@ using Dapr;
 var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
-// app.UseCloudEvents();
+app.UseCloudEvents();
 
 app.MapPost("/messagehandler", (
-    CloudEvent<TinyMessage> cloudEvent) =>
+    TinyMessage message) =>
 {
-    Console.WriteLine($"Received message {cloudEvent.Data.Id}.");
+    Console.WriteLine($"Received message {message.Id}.");
 
     return Results.Accepted();
 });
 
 app.Run();
 
-record TinyMessage(Guid Id, DateTime TimeStamp);
+record TinyMessage(string Id, DateTime TimeStamp);

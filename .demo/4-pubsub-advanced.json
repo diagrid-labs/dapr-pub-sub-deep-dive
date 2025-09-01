@@ -380,6 +380,20 @@
       }
     },
     {
+      "title": "Run PostgreSQL",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "postgresql",
+          "command": "docker run -it --rm --name postgresql -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 postgres"
+        }
+      ]
+    },
+    {
       "title": "Workflows",
       "description": "",
       "steps": [

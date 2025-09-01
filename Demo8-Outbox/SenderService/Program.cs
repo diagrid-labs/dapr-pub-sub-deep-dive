@@ -15,10 +15,10 @@ app.MapPost("/save", async (
             key: message.Id,
             value: JsonSerializer.SerializeToUtf8Bytes(message), //Encoding.UTF8.GetBytes(message.TimeStamp.ToString()) , //
             operationType: StateOperationType.Upsert,
-            metadata: new Dictionary<string, string>
-            {
-                  { "outbox.projection", "true" },
-                  { "datacontenttype", "application/json" }
+            metadata: new Dictionary<string, string>  
+            {  
+                { "contentType", "application/json" }, // Content type of the StateTransactionRequest   
+                { "datacontenttype", "application/json" } // Content type of the `data` field in cloudevent  
             }
         );
 
@@ -41,11 +41,11 @@ app.MapPost("/save", async (
         await daprClient.ExecuteStateTransactionAsync(StateComponentName, operations);
         Console.WriteLine($"State transaction executed {message.Id}.");
 
-        return Results.Created(message.Id.ToString(), value: null);
+        return Results.Created(message.Id, value: null);
     }
 );
 
 
 app.Run();
 
-record TinyMessage(String Id, DateTime TimeStamp);
+record TinyMessage(string Id, DateTime TimeStamp);
