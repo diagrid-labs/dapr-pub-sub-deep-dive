@@ -380,7 +380,52 @@
       }
     },
     {
-      "title": "Run PostgreSQL",
+      "title": "Outbox Sender Program.cs",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo8-Outbox/SenderService/Program.cs"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meuea7e7-qm7§0"
+    },
+    {
+      "title": "Outbox state.yaml",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo8-Outbox/Resources/state.yaml"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meuea7e7-qm7§0"
+    },
+    {
+      "title": "Outbox Receiver Program.cs",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo8-Outbox/ReceiverService/Program.cs"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meuea7e7-qm7§0"
+    },
+    {
+      "title": "Start PostgreSQL",
       "icons": {
         "start": "terminal-cmd",
         "end": "pass-filled"
@@ -390,6 +435,76 @@
           "action": "executeTerminalCommand",
           "terminalId": "postgresql",
           "command": "docker run -it --rm --name postgresql -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 postgres"
+        }
+      ]
+    },
+    {
+      "title": "Demo Outbox: Start services",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo8-Outbox",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 125
+        },
+        {
+          "action": "open",
+          "path": "Demo8-Outbox/dapr.yaml"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo Outbox: Save message",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo8-Outbox/outbox.http"
+        }
+      ],
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo Outbox: Stop services",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "postgresql",
+          "command": "\u0003"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "\u0003"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd ..\nclear",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
         }
       ]
     },
