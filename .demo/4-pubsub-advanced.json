@@ -10,7 +10,22 @@
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/04-advanced/bulk-publishing.md",
+          "path": "/.demo/slides/04-advanced/bulk.md",
+          "slide": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Bulk Diagrams",
+      "description": "",
+      "steps": [
+        {
+          "action": "markdownPreview",
+          "path": "/.demo/slides/04-advanced/bulk-diagrams.md",
           "slide": 1
         }
       ],
@@ -145,6 +160,21 @@
       }
     },
     {
+      "title": "CloudEvents Diagram",
+      "description": "",
+      "steps": [
+        {
+          "action": "markdownPreview",
+          "path": "/.demo/slides/04-advanced/cloud-events-diagrams.md",
+          "slide": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
       "title": "CloudEvents Sender Program.cs",
       "description": "",
       "steps": [
@@ -240,12 +270,27 @@
       ]
     },
     {
-      "title": "Message based routing",
+      "title": "Routing",
       "description": "",
       "steps": [
         {
           "action": "openSlide",
           "path": "/.demo/slides/04-advanced/routing.md",
+          "slide": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Routing Diagrams",
+      "description": "",
+      "steps": [
+        {
+          "action": "markdownPreview",
+          "path": "/.demo/slides/04-advanced/routing-diagrams.md",
           "slide": 1
         }
       ],
@@ -365,12 +410,172 @@
       ]
     },
     {
+      "title": "Resiliency",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/04-advanced/resiliency.md",
+          "slide": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Resiliency Diagram",
+      "description": "",
+      "steps": [
+        {
+          "action": "markdownPreview",
+          "path": "/.demo/slides/04-advanced/resiliency-diagrams.md",
+          "slide": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Resiliency subscription.yaml",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo7-Resiliency/Resources/subscription.yaml"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meuea7e7-qm7§0"
+    },
+    {
+      "title": "Resiliency subscription-deadletter.yaml",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo7-Resiliency/Resources/subscription-deadletter.yaml"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meuea7e7-qm7§0"
+    },
+    {
+      "title": "Resiliency DeadLetter Program.cs",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo7-Resiliency/DeadLetterService/Program.cs"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meuea7e7-qm7§0"
+    },
+    {
+      "title": "Demo Resiliency: Start services",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo7-Resiliency",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 125
+        },
+        {
+          "action": "open",
+          "path": "Demo7-Resiliency/dapr.yaml"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo Resiliency: Send message",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo7-Resiliency/resiliency.http"
+        }
+      ],
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      },
+      "id": "demo-meubp1sr-cm5k"
+    },
+    {
+      "title": "Demo Resiliency: Stop services",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "postgresql",
+          "command": "\u0003"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "\u0003"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd ..\nclear",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        }
+      ]
+    },
+    {
       "title": "Outbox Pattern",
       "description": "",
       "steps": [
         {
           "action": "openSlide",
           "path": "/.demo/slides/04-advanced/outbox-pattern.md",
+          "slide": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Outbox Pattern Diagram",
+      "description": "",
+      "steps": [
+        {
+          "action": "markdownPreview",
+          "path": "/.demo/slides/04-advanced/outbox-pattern-diagrams.md",
           "slide": 1
         }
       ],

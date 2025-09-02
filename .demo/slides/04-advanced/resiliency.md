@@ -3,4 +3,4 @@ theme: default
 layout: section
 ---
 
-# Dead Lettering
+# Resiliency & Dead Lettering
