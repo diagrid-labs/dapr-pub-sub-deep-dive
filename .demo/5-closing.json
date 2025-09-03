@@ -1,0 +1,60 @@
+{
+  "$schema": "https://demotime.show/demo-time.schema.json",
+  "title": "5 - Closing",
+  "description": "",
+  "version": 2,
+  "demos": [
+    {
+      "title": "Outro",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.terminal.killAll"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/05-outro/title.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "id": "demo-mf4id3ib-w1uk",
+      "title": "Show QR",
+      "steps": [
+        {
+          "action": "showEngageTimeSession",
+          "sessionId": "shiqu7"
+        }
+      ]
+    },
+    {
+      "id": "demo-mf4il91k-xct9",
+      "title": "How familiar are you with Dapr?",
+      "steps": [
+        {
+          "action": "startEngageTimePoll",
+          "sessionId": "shiqu7",
+          "pollId": "spxbf2"
+        },
+        {
+          "action": "showEngageTimePoll",
+          "sessionId": "shiqu7",
+          "pollId": "spxbf2"
+        }
+      ],
+      "icons": {
+        "start": "question",
+        "end": ""
+      }
+    }
+  ]
+}
