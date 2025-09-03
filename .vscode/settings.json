@@ -1,3 +1,6 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "demoTime.customTheme": ".demo/slides/theme/theme.css",
+    "demoTime.nextActionBehaviour": "currentPosition",
+    "demoTime.timer": 55
 }

@@ -27,12 +27,12 @@
       }
     },
     {
-      "title": "Bio",
+      "title": "Why async messaging?",
       "description": "",
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/01-intro/bio.md"
+          "path": "/.demo/slides/01-intro/why.md"
         }
       ],
       "icons": {
@@ -41,12 +41,66 @@
       }
     },
     {
-      "title": "Why async messaging?",
+      "id": "demo-mf4id3ib-w1uk",
+      "title": "Show QR",
+      "steps": [
+        {
+          "action": "startEngageTimeSession",
+          "sessionId": "shiqu7"
+        },
+        {
+          "action": "showEngageTimeSession",
+          "sessionId": "shiqu7"
+        }
+      ]
+    },
+    {
+      "id": "demo-mf4il91k-xct9",
+      "title": "How familiar are you with Dapr?",
+      "steps": [
+        {
+          "action": "startEngageTimePoll",
+          "sessionId": "shiqu7",
+          "pollId": "spxbf2"
+        },
+        {
+          "action": "showEngageTimePoll",
+          "sessionId": "shiqu7",
+          "pollId": "spxbf2"
+        }
+      ],
+      "icons": {
+        "start": "question",
+        "end": ""
+      }
+    },
+    {
+      "id": "demo-mf4iv9ph-ec6c",
+      "title": "Who owns Dapr?",
+      "steps": [
+        {
+          "action": "startEngageTimePoll",
+          "sessionId": "shiqu7",
+          "pollId": "zidssc"
+        },
+        {
+          "action": "showEngageTimePoll",
+          "sessionId": "shiqu7",
+          "pollId": "zidssc"
+        }
+      ],
+      "icons": {
+        "start": "question",
+        "end": ""
+      }
+    },
+    {
+      "title": "Bio",
       "description": "",
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/01-intro/why.md"
+          "path": "/.demo/slides/01-intro/bio.md"
         }
       ],
       "icons": {
