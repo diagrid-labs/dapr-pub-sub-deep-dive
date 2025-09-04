@@ -1,6 +1,6 @@
 ---
 theme: default
-layout: default
+layout: section
 ---
 
-# Why async messaging?
+# Why choose async messaging?

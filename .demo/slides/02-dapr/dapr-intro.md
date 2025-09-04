@@ -1,6 +1,6 @@
 ---
 theme: default
-layout: default
+layout: section
 ---
 
 # Dapr intro
