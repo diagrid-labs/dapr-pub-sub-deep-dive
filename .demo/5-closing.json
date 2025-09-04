@@ -32,7 +32,7 @@
       "steps": [
         {
           "action": "showEngageTimeSession",
-          "sessionId": "shiqu7"
+          "sessionId": "{SESSION_ID}"
         }
       ]
     },
@@ -42,12 +42,12 @@
       "steps": [
         {
           "action": "startEngageTimePoll",
-          "sessionId": "shiqu7",
+          "sessionId": "{SESSION_ID}",
           "pollId": "spxbf2"
         },
         {
           "action": "showEngageTimePoll",
-          "sessionId": "shiqu7",
+          "sessionId": "{SESSION_ID}",
           "pollId": "spxbf2"
         }
       ],

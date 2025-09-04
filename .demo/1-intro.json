@@ -46,11 +46,11 @@
       "steps": [
         {
           "action": "startEngageTimeSession",
-          "sessionId": "shiqu7"
+          "sessionId": "{SESSION_ID}"
         },
         {
           "action": "showEngageTimeSession",
-          "sessionId": "shiqu7"
+          "sessionId": "{SESSION_ID}"
         }
       ]
     },
@@ -60,12 +60,12 @@
       "steps": [
         {
           "action": "startEngageTimePoll",
-          "sessionId": "shiqu7",
+          "sessionId": "{SESSION_ID}",
           "pollId": "spxbf2"
         },
         {
           "action": "showEngageTimePoll",
-          "sessionId": "shiqu7",
+          "sessionId": "{SESSION_ID}",
           "pollId": "spxbf2"
         }
       ],
@@ -80,12 +80,12 @@
       "steps": [
         {
           "action": "startEngageTimePoll",
-          "sessionId": "shiqu7",
+          "sessionId": "{SESSION_ID}",
           "pollId": "zidssc"
         },
         {
           "action": "showEngageTimePoll",
-          "sessionId": "shiqu7",
+          "sessionId": "{SESSION_ID}",
           "pollId": "zidssc"
         }
       ],
