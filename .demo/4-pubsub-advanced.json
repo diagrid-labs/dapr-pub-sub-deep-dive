@@ -345,6 +345,23 @@
       "id": "demo-meuea7e7-qm7§0"
     },
     {
+      "title": "Routing Receiver2 subscription.yaml",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "Demo6-Routing/Resources/subscription.yaml",
+          "position": "10:11",
+          "highlightWholeLine": true
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meuea7e7-qm7§0"
+    },
+    {
       "title": "Demo Routing: Start services",
       "description": "",
       "steps": [

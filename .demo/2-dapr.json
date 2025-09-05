@@ -19,6 +19,20 @@
       }
     },
     {
+      "title": "Dapr website",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/02-dapr/dapr-website.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
       "title": "Dapr overview",
       "description": "",
       "steps": [
@@ -33,12 +47,12 @@
       }
     },
     {
-      "title": "Pub/Sub overview",
+      "title": "Pub/Sub components",
       "description": "",
       "steps": [
         {
-          "action": "openSlide",
-          "path": "/.demo/slides/02-dapr/dapr-pubsub.md"
+          "action": "markdownPreview",
+          "path": "/.demo/slides/02-dapr/dapr-pubsub-components.md"
         }
       ],
       "icons": {
@@ -47,12 +61,26 @@
       }
     },
     {
-      "title": "Pub/Sub components",
+      "title": "Pub/Sub diagram 1",
       "description": "",
       "steps": [
         {
           "action": "openSlide",
-          "path": "/.demo/slides/02-dapr/dapr-pubsub-components.md"
+          "path": "/.demo/slides/02-dapr/dapr-pubsub1.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Pub/Sub diagram 2",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/02-dapr/dapr-pubsub2.md"
         }
       ],
       "icons": {

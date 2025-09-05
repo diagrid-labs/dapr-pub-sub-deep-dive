@@ -5,7 +5,7 @@
   "version": 2,
   "demos": [
     {
-      "title": "Publishing",
+      "title": "Publishing with Dapr",
       "description": "",
       "steps": [
         {
@@ -18,6 +18,23 @@
         "start": "vm",
         "end": "pass-filled"
       }
+    },
+    {
+      "title": "Project file",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "Demo1-Declarative/SenderService/SenderService.csproj",
+          "position": "10",
+          "highlightWholeLine": true
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-meuc0enp-v4pj"
     },
     {
       "title": "Publishing JSON",
@@ -161,6 +178,21 @@
     },
     {
       "title": "Switch to RabbitMQ",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/03-pubsub/switch-rabbitmq.md",
+          "slide": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Start RabbitMQ",
       "icons": {
         "start": "terminal-cmd",
         "end": "pass-filled"
@@ -263,7 +295,7 @@
           "terminalId": "rabbitmq",
           "command": "\u0003"
         },
-         {
+        {
           "action": "executeTerminalCommand",
           "terminalId": "rabbitmq",
           "command": "clear"
@@ -293,7 +325,22 @@
       ]
     },
     {
-      "title": "Switch to ServiceBus",
+      "title": "Switch to Azure Service Bus",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/03-pubsub/switch-azure-servicebus.md",
+          "slide": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Show component file",
       "icons": {
         "start": "terminal-cmd",
         "end": "pass-filled"

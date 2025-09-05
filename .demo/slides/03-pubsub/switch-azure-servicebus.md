@@ -3,6 +3,6 @@ theme: default
 layout: section
 ---
 
-# Resiliency & Dead Lettering
+# Switch to Azure Service Bus
 
 ![Win Pub/Sub Animation](.demo/slides/images/win-pubsub-x100.gif)

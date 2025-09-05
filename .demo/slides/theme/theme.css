@@ -100,7 +100,7 @@
   }
 
   h1 {
-    @apply text-4xl;
+    @apply text-3xl;
     color: var(--color-background);
     background: var(--color-primary);
     font-family: 'SpaceGrotesk', sans-serif;
@@ -110,14 +110,14 @@
   }
 
   h2 {
-    @apply text-3xl;
+    @apply text-2xl;
     color: var(--demotime-heading-color);
     background: var(--demotime-heading-background);
     font-family: 'SpaceGrotesk', sans-serif;
   }
 
   h3 {
-    @apply text-2xl;
+    @apply text-xl;
     color: var(--demotime-heading-color);
     background: var(--demotime-heading-background);
     font-family: 'SpaceGrotesk', sans-serif;
@@ -209,7 +209,7 @@
     }
 
     h1 {
-      @apply text-6xl;
+      @apply text-4xl;
       color: var(--color-background);
       background: var(--color-primary);
       line-height: 1.5em;
