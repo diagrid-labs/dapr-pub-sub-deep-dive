@@ -140,7 +140,7 @@
   p {
     @apply leading-relaxed opacity-80 ;
     font-family: 'OpenSans';
-    font-size: x-large;
+    font-size: large;
 
     &:has(> img),
     &:has(> a) {
@@ -162,7 +162,7 @@
 
     li {
       @apply mb-2;
-      font-size: x-large;
+      font-size: large;
       line-height: 1.5em;
     }
 
@@ -194,8 +194,6 @@
     h1 {
       color: var(--color-background);
       background: var(--color-primary);
-      /* color: var(--demotime-default-heading-color);
-      background: var(--demotime-default-heading-background); */
     }
   }
 
@@ -231,7 +229,7 @@
     }
 
     h1 {
-      @apply text-5xl;
+      @apply text-4xl;
       color: var(--demotime-quote-heading-color);
       background: var(--demotime-quote-heading-background);
     }
@@ -242,8 +240,6 @@
   }
 
   .section {
-    /* background: var(--color-blue-mid);
-    color: var(--color-white); */
 
     .slide__content__inner {
       @apply flex flex-col items-center justify-center text-center;
@@ -311,8 +307,16 @@
     }
 
     h1 {
-      color: var(--demotime-two-columns-heading-color);
-      background: var(--demotime-two-columns-heading-background);
+      @apply text-4xl;
+      color: var(--color-background);
+      background: var(--color-primary);
+      line-height: 1.5em;
+      padding: 0.25em;
+      border-radius: 0.15em;
+    }
+
+    p {
+       @apply text-base opacity-75;
     }
   }
 }

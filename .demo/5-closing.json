@@ -25,36 +25,6 @@
         "start": "vm",
         "end": "pass-filled"
       }
-    },
-    {
-      "id": "demo-mf4id3ib-w1uk",
-      "title": "Show QR",
-      "steps": [
-        {
-          "action": "showEngageTimeSession",
-          "sessionId": "{SESSION_ID}"
-        }
-      ]
-    },
-    {
-      "id": "demo-mf4il91k-xct9",
-      "title": "How familiar are you with Dapr?",
-      "steps": [
-        {
-          "action": "startEngageTimePoll",
-          "sessionId": "{SESSION_ID}",
-          "pollId": "spxbf2"
-        },
-        {
-          "action": "showEngageTimePoll",
-          "sessionId": "{SESSION_ID}",
-          "pollId": "spxbf2"
-        }
-      ],
-      "icons": {
-        "start": "question",
-        "end": ""
-      }
     }
   ]
 }

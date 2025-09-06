@@ -729,21 +729,6 @@
           "insertTypingSpeed": 50
         }
       ]
-    },
-    {
-      "title": "Workflows",
-      "description": "",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/04-advanced/workflows.md",
-          "slide": 1
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
     }
   ]
 }
