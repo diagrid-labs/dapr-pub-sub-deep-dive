@@ -52,7 +52,11 @@
           "action": "showEngageTimeSession",
           "sessionId": "{SESSION_ID}"
         }
-      ]
+      ],
+      "icons": {
+        "start": "device-camera",
+        "end": ""
+      }
     },
     {
       "id": "demo-mf4il91k-xct9",

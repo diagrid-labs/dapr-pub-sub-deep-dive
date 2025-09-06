@@ -132,8 +132,8 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..\nclear",
           "terminalId": "dapr-run",
+          "command": "cd ..\nclear",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
         }
@@ -253,8 +253,8 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..\nclear",
           "terminalId": "dapr-run",
+          "command": "cd ..\nclear",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
         }
@@ -404,8 +404,8 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..\nclear",
           "terminalId": "dapr-run",
+          "command": "cd ..\nclear",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
         }
@@ -432,7 +432,7 @@
       "steps": [
         {
           "action": "markdownPreview",
-          "path": "/.demo/slides/04-advanced/resiliency-diagrams.md",
+          "path": ".demo/slides/04-advanced/Resiliency-diagrams.md",
           "slide": 1
         }
       ],
@@ -442,12 +442,12 @@
       }
     },
     {
-      "title": "Resiliency subscription.yaml",
+      "title": "Resiliency resiliency.yaml",
       "description": "",
       "steps": [
         {
           "action": "open",
-          "path": "Demo7-Resiliency/Resources/subscription.yaml"
+          "path": "Demo7-Resiliency/Resources/resiliency.yaml"
         }
       ],
       "icons": {
@@ -456,67 +456,7 @@
       }
     },
     {
-      "title": "Resiliency Receiver Program.cs",
-      "description": "",
-      "steps": [
-        {
-          "action": "open",
-          "path": "Demo7-Resiliency/ReceiverService/Program.cs"
-        }
-      ],
-      "icons": {
-        "start": "code",
-        "end": "pass-filled"
-      }
-    },
-    {
-      "title": "Resiliency Receiver 429",
-      "description": "",
-      "steps": [
-        {
-          "action": "insert",
-          "path": "Demo7-Resiliency/ReceiverService/Program.cs",
-          "content": "    return Results.Problem(\"Too many requests\", statusCode: (int)HttpStatusCode.TooManyRequests);",
-          "position": "13",
-          "highlightWholeLine": true,
-          "insertTypingMode": "instant"
-        }
-      ],
-      "icons": {
-        "start": "code",
-        "end": "pass-filled"
-      }
-    },
-    {
-      "title": "Resiliency subscription-deadletter.yaml",
-      "description": "",
-      "steps": [
-        {
-          "action": "open",
-          "path": "Demo7-Resiliency/Resources/subscription-deadletter.yaml"
-        }
-      ],
-      "icons": {
-        "start": "code",
-        "end": "pass-filled"
-      }
-    },
-    {
-      "title": "Resiliency DeadLetter Program.cs",
-      "description": "",
-      "steps": [
-        {
-          "action": "open",
-          "path": "Demo7-Resiliency/DeadLetterService/Program.cs"
-        }
-      ],
-      "icons": {
-        "start": "code",
-        "end": "pass-filled"
-      }
-    },
-    {
-      "title": "Demo Resiliency: Start services",
+      "title": "Demo Resiliency 1: Start services",
       "description": "",
       "steps": [
         {
@@ -544,12 +484,76 @@
       }
     },
     {
+      "title": "Demo Resiliency 1: Stop Redis",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "docker stop dapr_redis",
+          "terminalId": "redis",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 125
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Demo Resiliency: Check logs",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": " ",
+          "terminalId": "dapr-run"
+        }
+      ],
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      }
+    },
+    {
       "title": "Demo Resiliency: Send message",
       "description": "",
       "steps": [
         {
           "action": "open",
           "path": "Demo7-Resiliency/resiliency.http"
+        }
+      ],
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Demo Resiliency: Start Redis",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "docker start dapr_redis",
+          "terminalId": "redis",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 125
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Demo Resiliency: Check recovery",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": " ",
+          "terminalId": "dapr-run"
         }
       ],
       "icons": {
@@ -566,13 +570,170 @@
       "steps": [
         {
           "action": "executeTerminalCommand",
+          "terminalId": "redis",
+          "command": "clear"
+        },
+        {
+          "action": "executeTerminalCommand",
           "terminalId": "dapr-run",
           "command": "\u0003"
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..\nclear",
           "terminalId": "dapr-run",
+          "command": "cd ..\nclear",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        }
+      ]
+    },
+    {
+      "title": "Deadletter Diagram",
+      "description": "",
+      "steps": [
+        {
+          "action": "markdownPreview",
+          "path": ".demo/slides/04-advanced/deadletter-diagrams.md",
+          "slide": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Deadletter Receiver Program.cs",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo7-Resiliency/ReceiverService/Program.cs"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Deadletter Receiver 429",
+      "description": "",
+      "steps": [
+        {
+          "action": "insert",
+          "path": "Demo7-Resiliency/ReceiverService/Program.cs",
+          "content": "    return Results.Problem(\"Too many requests\", statusCode: (int)HttpStatusCode.TooManyRequests);",
+          "position": "13",
+          "highlightWholeLine": true,
+          "insertTypingMode": "instant"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Deadletter subscription.yaml",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo7-Resiliency/Resources/subscription.yaml"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Deadletter subscription-deadletter.yaml",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo7-Resiliency/Resources/subscription-deadletter.yaml"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "DeadLetter Program.cs",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo7-Resiliency/DeadLetterService/Program.cs"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Demo Deadletter: Start services",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd Demo7-Resiliency",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "dapr run -f .",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 125
+        },
+        {
+          "action": "open",
+          "path": "Demo7-Resiliency/dapr.yaml"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Demo Deadletter: Send message",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo7-Resiliency/resiliency.http"
+        }
+      ],
+      "icons": {
+        "start": "symbol-event",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Demo Deadletter: Stop services",
+      "icons": {
+        "start": "terminal-cmd",
+        "end": "pass-filled"
+      },
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "\u0003"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "cd ..\nclear",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
         },
@@ -732,8 +893,8 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..\nclear",
           "terminalId": "dapr-run",
+          "command": "cd ..\nclear",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
         }
