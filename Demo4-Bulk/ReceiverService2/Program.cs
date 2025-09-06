@@ -22,6 +22,7 @@ app.MapPost("/messagehandler",
     {
         try
         {
+            // Process each message
             responseEntries.Add(new BulkSubscribeAppResponseEntry(message.EntryId, BulkSubscribeAppResponseStatus.SUCCESS));
         }
         catch (Exception)

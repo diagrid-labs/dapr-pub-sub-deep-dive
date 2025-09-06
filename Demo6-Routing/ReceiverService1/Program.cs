@@ -14,15 +14,19 @@ const string ROUTE_TYPE1_LARGEAMOUNT = "event.data.type == \"dapr.demo.type1\" &
 const int PRIORITY100 = 100;
 const int PRIORITY200 = 200;
 
-app.MapPost("/handletype1", [Topic(PUBSUB_NAME, TOPIC_NAME, ROUTE_TYPE1, PRIORITY200)](
-    TinyMessage message) => {
+app.MapPost("/handletype1",
+    [Topic(PUBSUB_NAME, TOPIC_NAME, ROUTE_TYPE1, PRIORITY200)] (
+    TinyMessage message) =>
+{
     Console.WriteLine($"Type1 - Received message {message.Id}: {message.Type}.");
 
     return Results.Accepted();
 });
 
-app.MapPost("/handlelargeamount", [Topic(PUBSUB_NAME, TOPIC_NAME, ROUTE_TYPE1_LARGEAMOUNT, PRIORITY100)](
-    TinyMessage message) => {
+app.MapPost("/handlelargeamount",
+    [Topic(PUBSUB_NAME, TOPIC_NAME, ROUTE_TYPE1_LARGEAMOUNT, PRIORITY100)] (
+    TinyMessage message) =>
+{
     Console.WriteLine($"Large amount - Received message {message.Id}: {message.Type}.");
 
     return Results.Accepted();

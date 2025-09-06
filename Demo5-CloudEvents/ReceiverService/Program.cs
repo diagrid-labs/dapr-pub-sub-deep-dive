@@ -3,6 +3,7 @@ using Dapr;
 var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
+// app.UseCloudEvents(); // Disabled to show CloudEvent payload
 app.MapSubscribeHandler();
 
 const string PUBSUB_NAME = "demo5-pubsub";

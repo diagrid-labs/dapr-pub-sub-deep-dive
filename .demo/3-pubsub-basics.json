@@ -20,7 +20,22 @@
       }
     },
     {
-      "title": "Project file",
+      "title": "Publishing Diagram",
+      "description": "",
+      "steps": [
+        {
+          "action": "markdownPreview",
+          "path": "/.demo/slides/03-pubsub/publishing-diagram.md",
+          "slide": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Sender project file",
       "description": "",
       "steps": [
         {
@@ -28,16 +43,19 @@
           "path": "Demo1-Declarative/SenderService/SenderService.csproj",
           "position": "10",
           "highlightWholeLine": true
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusSideBar"
         }
       ],
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuc0enp-v4pj"
+      }
     },
     {
-      "title": "Publishing JSON",
+      "title": "Sender Project.cs",
       "description": "",
       "steps": [
         {
@@ -50,8 +68,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuc0enp-v4pj"
+      }
     },
     {
       "title": "Publishing Bytes",
@@ -67,8 +84,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuc7xmt-q7de"
+      }
     },
     {
       "title": "Publishing pubsub.yaml",
@@ -88,8 +104,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meucexdc-7a1u"
+      }
     },
     {
       "title": "Demo Pub/Sub Redis: Start services",
@@ -117,8 +132,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Pub/Sub Redis: Check component init",
@@ -137,8 +151,7 @@
       "icons": {
         "start": "symbol-event",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Pub/Sub Redis: Publish message",
@@ -152,8 +165,7 @@
       "icons": {
         "start": "symbol-event",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Pub/Sub Redis: Stop services",
@@ -245,8 +257,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Pub/Sub RabbitMQ: Check component init",
@@ -265,8 +276,7 @@
       "icons": {
         "start": "symbol-event",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Pub/Sub RabbitMQ: Publish message",
@@ -280,8 +290,7 @@
       "icons": {
         "start": "symbol-event",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Pub/Sub RabbitMQ: Stop services",
@@ -388,8 +397,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Pub/Sub ServiceBus: Check component init",
@@ -408,8 +416,7 @@
       "icons": {
         "start": "symbol-event",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Pub/Sub ServiceBus: Publish message",
@@ -423,8 +430,7 @@
       "icons": {
         "start": "symbol-event",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Pub/Sub ServiceBus: Stop services",
@@ -503,8 +509,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Declarative subscription.yaml",
@@ -518,8 +523,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meubz02u-rulm"
+      }
     },
     {
       "title": "Demo Declarative: Start services",
@@ -547,8 +551,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Declarative: Publish message",
@@ -562,8 +565,7 @@
       "icons": {
         "start": "symbol-event",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Declarative: Stop services",
@@ -613,8 +615,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meubuq7h-0i48"
+      }
     },
     {
       "title": "Demo Programmatic: Start services",
@@ -642,8 +643,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Programmatic: Publish message",
@@ -657,8 +657,7 @@
       "icons": {
         "start": "symbol-event",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Programmatic: Stop services",
@@ -715,8 +714,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuea7e7-qm70"
+      }
     },
     {
       "title": "Demo Streaming: Start services",
@@ -744,8 +742,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Streaming: Publish message",

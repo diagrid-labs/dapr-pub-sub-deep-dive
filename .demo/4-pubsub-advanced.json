@@ -472,6 +472,40 @@
       "id": "demo-meuea7e7-qm7§0"
     },
     {
+      "title": "Resiliency Receiver Program.cs",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo7-Resiliency/ReceiverService/Program.cs"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-mf88fnz7-ftoo"
+    },
+    {
+      "title": "Resiliency Receiver 429",
+      "description": "",
+      "steps": [
+        {
+          "action": "insert",
+          "path": "Demo7-Resiliency/ReceiverService/Program.cs",
+          "content": "    return Results.Problem(\"Too many requests\", statusCode: (int)HttpStatusCode.TooManyRequests);",
+          "position": "13",
+          "highlightWholeLine": true,
+          "insertTypingMode": "instant"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      },
+      "id": "demo-mf88hug3-rqct"
+    },
+    {
       "title": "Resiliency subscription-deadletter.yaml",
       "description": "",
       "steps": [
@@ -554,11 +588,6 @@
       "steps": [
         {
           "action": "executeTerminalCommand",
-          "terminalId": "postgresql",
-          "command": "\u0003"
-        },
-        {
-          "action": "executeTerminalCommand",
           "terminalId": "dapr-run",
           "command": "\u0003"
         },
@@ -568,6 +597,13 @@
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
+        },
+        {
+          "action": "insert",
+          "path": "Demo7-Resiliency/ReceiverService/Program.cs",
+          "content": "    return Results.Accepted();",
+          "position": "13",
+          "highlightWholeLine": true
         }
       ]
     },
