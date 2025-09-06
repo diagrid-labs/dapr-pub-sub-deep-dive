@@ -46,8 +46,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuea7e7-qm70"
+      }
     },
     {
       "title": "Bulk Receiver1 Program.cs",
@@ -61,8 +60,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuea7e7-qm70"
+      }
     },
     {
       "title": "Bulk Receiver2 Program.cs",
@@ -76,8 +74,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuea7e7-qm70"
+      }
     },
     {
       "title": "Demo Bulk: Start services",
@@ -105,8 +102,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Bulk: Publish message",
@@ -120,8 +116,7 @@
       "icons": {
         "start": "symbol-event",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Bulk: Stop services",
@@ -186,8 +181,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuea7e7-qm70"
+      }
     },
     {
       "title": "CloudEvents Receiver Program.cs",
@@ -201,8 +195,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuea7e7-qm70"
+      }
     },
     {
       "title": "Demo CloudEvents: Start services",
@@ -230,8 +223,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo CloudEvents: Publish message",
@@ -245,8 +237,7 @@
       "icons": {
         "start": "symbol-event",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo CloudEvents: Stop services",
@@ -311,8 +302,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuea7e7-qm7§0"
+      }
     },
     {
       "title": "Routing Receiver1 Program.cs",
@@ -326,8 +316,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuea7e7-qm7§0"
+      }
     },
     {
       "title": "Routing Receiver2 Program.cs",
@@ -341,8 +330,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuea7e7-qm7§0"
+      }
     },
     {
       "title": "Routing Receiver2 subscription.yaml",
@@ -358,8 +346,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuea7e7-qm7§0"
+      }
     },
     {
       "title": "Demo Routing: Start services",
@@ -387,8 +374,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Routing: Publish message",
@@ -402,8 +388,7 @@
       "icons": {
         "start": "symbol-event",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Routing: Stop services",
@@ -468,8 +453,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuea7e7-qm7§0"
+      }
     },
     {
       "title": "Resiliency Receiver Program.cs",
@@ -483,8 +467,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-mf88fnz7-ftoo"
+      }
     },
     {
       "title": "Resiliency Receiver 429",
@@ -502,8 +485,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-mf88hug3-rqct"
+      }
     },
     {
       "title": "Resiliency subscription-deadletter.yaml",
@@ -517,8 +499,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuea7e7-qm7§0"
+      }
     },
     {
       "title": "Resiliency DeadLetter Program.cs",
@@ -532,8 +513,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuea7e7-qm7§0"
+      }
     },
     {
       "title": "Demo Resiliency: Start services",
@@ -561,8 +541,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Resiliency: Send message",
@@ -576,8 +555,7 @@
       "icons": {
         "start": "symbol-event",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Resiliency: Stop services",
@@ -649,8 +627,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuea7e7-qm7§0"
+      }
     },
     {
       "title": "Outbox state.yaml",
@@ -664,8 +641,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuea7e7-qm7§0"
+      }
     },
     {
       "title": "Outbox Receiver Program.cs",
@@ -679,8 +655,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meuea7e7-qm7§0"
+      }
     },
     {
       "title": "Start PostgreSQL",
@@ -722,8 +697,7 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Outbox: Save message",
@@ -737,8 +711,7 @@
       "icons": {
         "start": "symbol-event",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Outbox: Stop services",

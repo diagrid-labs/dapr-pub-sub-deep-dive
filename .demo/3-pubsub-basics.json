@@ -756,8 +756,7 @@
       "icons": {
         "start": "symbol-event",
         "end": "pass-filled"
-      },
-      "id": "demo-meubp1sr-cm5k"
+      }
     },
     {
       "title": "Demo Streaming: Stop services",
