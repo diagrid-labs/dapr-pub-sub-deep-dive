@@ -308,28 +308,8 @@
       "steps": [
         {
           "action": "executeTerminalCommand",
-          "terminalId": "rabbitmq",
-          "command": "\u0003"
-        },
-        {
-          "action": "executeTerminalCommand",
-          "terminalId": "rabbitmq",
-          "command": "clear"
-        },
-        {
-          "action": "executeTerminalCommand",
           "terminalId": "dapr-run",
           "command": "\u0003"
-        },
-        {
-          "action": "rename",
-          "path": "Demo1-Declarative/Resources/pubsub-rabbitmq.yaml",
-          "dest": "Demo1-Declarative/Resources/pubsub-rabbitmq.yaml.temp"
-        },
-        {
-          "action": "rename",
-          "path": "Demo1-Declarative/Resources/pubsub.yaml.temp",
-          "dest": "Demo1-Declarative/Resources/pubsub.yaml"
         },
         {
           "action": "executeTerminalCommand",
@@ -344,6 +324,26 @@
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "rabbitmq",
+          "command": "\u0003"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "rabbitmq",
+          "command": "clear"
+        },
+        {
+          "action": "rename",
+          "path": "Demo1-Declarative/Resources/pubsub-rabbitmq.yaml",
+          "dest": "Demo1-Declarative/Resources/pubsub-rabbitmq.yaml.temp"
+        },
+        {
+          "action": "rename",
+          "path": "Demo1-Declarative/Resources/pubsub.yaml.temp",
+          "dest": "Demo1-Declarative/Resources/pubsub.yaml"
         }
       ]
     },

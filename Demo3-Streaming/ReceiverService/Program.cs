@@ -1,4 +1,5 @@
 using System.Text;
+using System.Text.Json;
 using Dapr.Messaging.PublishSubscribe;
 using Dapr.Messaging.PublishSubscribe.Extensions;
 
@@ -17,7 +18,7 @@ Task<TopicResponseAction> HandleMessageAsync(
     try
     {
         //Do something with the message
-        Console.WriteLine(Encoding.UTF8.GetString(message.Data.Span));
+        Console.WriteLine($"Received {Encoding.UTF8.GetString(message.Data.Span)} via streaming subscription.");
         return Task.FromResult(TopicResponseAction.Success);
     }
     catch
@@ -46,3 +47,5 @@ await Task.Delay(TimeSpan.FromMinutes(1));
 
 //When you're done with the subscription, simply dispose of it
 await subscription.DisposeAsync();
+
+record TinyMessage(Guid Id, DateTimeOffset TimeStamp);

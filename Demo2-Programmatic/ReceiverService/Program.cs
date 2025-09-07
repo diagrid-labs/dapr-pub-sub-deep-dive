@@ -12,7 +12,7 @@ const string TOPIC_NAME = "incoming-messages-programmatic";
 
 app.MapPost("/messagehandler",
     [Topic(PUBSUB_NAME, TOPIC_NAME)] (TinyMessage message) => {
-    Console.WriteLine($"Received message {message.Id}.");
+    Console.WriteLine($"Received message {message.Id} via programmatic subscription.");
 
     return Results.Accepted();
 });

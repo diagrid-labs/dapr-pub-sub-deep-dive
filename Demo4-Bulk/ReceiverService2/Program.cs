@@ -9,9 +9,11 @@ app.MapSubscribeHandler();
 
 const string PUBSUB_NAME = "demo4-pubsub";
 const string TOPIC_NAME = "incoming-messages-bulk";
+const int MAX_MESSAGE_COUNT = 10;
+const int MAX_DURATION_MS = 50;
 
 app.MapPost("/messagehandler", 
-    [BulkSubscribe(TOPIC_NAME, 5, 40)]
+    [BulkSubscribe(TOPIC_NAME, MAX_MESSAGE_COUNT, MAX_DURATION_MS)]
     [Topic(PUBSUB_NAME, TOPIC_NAME)] (BulkSubscribeMessage<TinyMessage> bulkMessage) =>
 {
     Console.WriteLine($"Received {bulkMessage.Entries.Count} messages.");

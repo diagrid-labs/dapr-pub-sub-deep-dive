@@ -34,7 +34,7 @@ graph LR
     subgraph Broker
         T@{ shape: das, label: "Topic" }
     end
-    R[Receiver1]
+    R[Receiver2]
     S -.->|"[Messages]"| T
     T -.->|"[Messages]"| R
 ```

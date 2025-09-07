@@ -11,8 +11,8 @@ const string PUBSUB_NAME = "demo6-pubsub";
 const string TOPIC_NAME = "incoming-messages-routing";
 const string ROUTE_TYPE1 = "event.data.type == \"dapr.demo.type1\"";
 const string ROUTE_TYPE1_LARGEAMOUNT = "event.data.type == \"dapr.demo.type1\" && event.data.amount > 10";
-const int PRIORITY100 = 100;
-const int PRIORITY200 = 200;
+const int PRIORITY100 = 100; // Higher priority
+const int PRIORITY200 = 200; // Lower priority
 
 app.MapPost("/handletype1",
     [Topic(PUBSUB_NAME, TOPIC_NAME, ROUTE_TYPE1, PRIORITY200)] (
