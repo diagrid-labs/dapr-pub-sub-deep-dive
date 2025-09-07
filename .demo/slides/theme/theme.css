@@ -140,7 +140,7 @@
   p {
     @apply leading-relaxed opacity-80 ;
     font-family: 'OpenSans';
-    font-size: large;
+    font-size: x-large;
 
     &:has(> img),
     &:has(> a) {
@@ -162,7 +162,7 @@
 
     li {
       @apply mb-2;
-      font-size: large;
+      font-size: x-large;
       line-height: 1.5em;
     }
 

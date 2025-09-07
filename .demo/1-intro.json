@@ -111,6 +111,20 @@
         "start": "vm",
         "end": "pass-filled"
       }
+    },
+    {
+      "title": "Topics",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/01-intro/topics.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
     }
   ]
 }

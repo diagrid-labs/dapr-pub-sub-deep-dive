@@ -181,7 +181,14 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..\nclear",
+          "command": "cd ..",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "clear",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
@@ -326,7 +333,14 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..\nclear",
+          "command": "cd ..",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "clear",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
@@ -456,7 +470,14 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..\nclear",
+          "command": "cd ..",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "clear",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
@@ -494,6 +515,20 @@
       }
     },
     {
+      "title": "Declarative subscription.yaml",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "Demo1-Declarative/Resources/subscription.yaml"
+        }
+      ],
+      "icons": {
+        "start": "code",
+        "end": "pass-filled"
+      }
+    },
+    {
       "title": "Declarative Program.cs",
       "description": "",
       "steps": [
@@ -504,20 +539,6 @@
         {
           "action": "open",
           "path": "Demo1-Declarative/ReceiverService/Program.cs"
-        }
-      ],
-      "icons": {
-        "start": "code",
-        "end": "pass-filled"
-      }
-    },
-    {
-      "title": "Declarative subscription.yaml",
-      "description": "",
-      "steps": [
-        {
-          "action": "open",
-          "path": "Demo1-Declarative/Resources/subscription.yaml"
         }
       ],
       "icons": {
@@ -581,7 +602,14 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..\nclear",
+          "command": "cd ..",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "clear",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
@@ -680,7 +708,14 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..\nclear",
+          "command": "cd ..",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "clear",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
@@ -772,7 +807,14 @@
         },
         {
           "action": "executeTerminalCommand",
-          "command": "cd ..\nclear",
+          "command": "cd ..",
+          "terminalId": "dapr-run",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "clear",
           "terminalId": "dapr-run",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50

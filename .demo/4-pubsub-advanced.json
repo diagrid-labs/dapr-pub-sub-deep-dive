@@ -133,7 +133,14 @@
         {
           "action": "executeTerminalCommand",
           "terminalId": "dapr-run",
-          "command": "cd ..\nclear",
+          "command": "cd ..",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "clear",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
         }
@@ -254,7 +261,14 @@
         {
           "action": "executeTerminalCommand",
           "terminalId": "dapr-run",
-          "command": "cd ..\nclear",
+          "command": "cd ..",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "clear",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
         }
@@ -405,7 +419,14 @@
         {
           "action": "executeTerminalCommand",
           "terminalId": "dapr-run",
-          "command": "cd ..\nclear",
+          "command": "cd ..",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "clear",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
         }
@@ -581,7 +602,14 @@
         {
           "action": "executeTerminalCommand",
           "terminalId": "dapr-run",
-          "command": "cd ..\nclear",
+          "command": "cd ..",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "clear",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
         }
@@ -733,10 +761,17 @@
         {
           "action": "executeTerminalCommand",
           "terminalId": "dapr-run",
-          "command": "cd ..\nclear",
+          "command": "cd ..",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
         },
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "clear",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        }
         {
           "action": "insert",
           "path": "Demo7-Resiliency/ReceiverService/Program.cs",
@@ -894,7 +929,14 @@
         {
           "action": "executeTerminalCommand",
           "terminalId": "dapr-run",
-          "command": "cd ..\nclear",
+          "command": "cd ..",
+          "insertTypingMode": "character-by-character",
+          "insertTypingSpeed": 50
+        },
+        {
+          "action": "executeTerminalCommand",
+          "terminalId": "dapr-run",
+          "command": "clear",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
         }
