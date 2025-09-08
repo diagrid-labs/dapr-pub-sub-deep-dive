@@ -309,8 +309,10 @@
       "description": "",
       "steps": [
         {
-          "action": "open",
-          "path": "Demo6-Routing/SenderService/Program.cs"
+          "action": "highlight",
+          "path": "Demo6-Routing/SenderService/Program.cs",
+          "position": "26",
+          "highlightWholeLine": true
         }
       ],
       "icons": {
