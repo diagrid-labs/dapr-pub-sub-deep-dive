@@ -27,12 +27,26 @@
       }
     },
     {
-      "title": "Why async messaging?",
+      "title": "Why pub/sub messaging?",
       "description": "",
       "steps": [
         {
           "action": "openSlide",
           "path": "/.demo/slides/01-intro/why.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Reasons for pub/sub messaging",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/01-intro/reasons.md"
         }
       ],
       "icons": {

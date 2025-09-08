@@ -5,7 +5,6 @@ layout: default
 
 # A specification for describing event data in a common way
 
-
 ```mermaid
 ---
 title: CloudEvents

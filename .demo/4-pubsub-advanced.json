@@ -450,12 +450,27 @@
       }
     },
     {
-      "title": "Resiliency Diagram",
+      "title": "Resiliency Diagram 1",
       "description": "",
       "steps": [
         {
           "action": "markdownPreview",
-          "path": ".demo/slides/04-advanced/Resiliency-diagrams.md",
+          "path": ".demo/slides/04-advanced/resiliency-diagrams1.md",
+          "slide": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Resiliency Diagram 2",
+      "description": "",
+      "steps": [
+        {
+          "action": "markdownPreview",
+          "path": ".demo/slides/04-advanced/resiliency-diagrams2.md",
           "slide": 1
         }
       ],
@@ -616,6 +631,21 @@
           "insertTypingSpeed": 50
         }
       ]
+    },
+    {
+      "title": "Dead Lettering",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/04-advanced/deadletter.md",
+          "slide": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
     },
     {
       "title": "Deadletter Diagram",

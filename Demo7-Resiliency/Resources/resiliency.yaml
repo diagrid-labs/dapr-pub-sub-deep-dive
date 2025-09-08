@@ -8,7 +8,7 @@ spec:
       pubsubRetry5xx:
         policy: constant
         duration: 1s
-        maxRetries: 10
+        maxRetries: 30
         matching:
           httpStatusCodes: 500-599
       pubsubRetryExp:

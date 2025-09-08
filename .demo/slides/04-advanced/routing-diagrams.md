@@ -5,7 +5,7 @@ layout: default
 
 ```mermaid
 ---
-title: Message Routing
+title: Content-based Routing
 config:
   theme: light
 ---

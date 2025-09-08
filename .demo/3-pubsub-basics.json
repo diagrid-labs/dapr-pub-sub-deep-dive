@@ -96,7 +96,7 @@
         },
         {
           "action": "open",
-          "path": "Demo1-Declarative/Resources/pubsub.yaml",
+          "path": "Demo1-Declarative/Resources/pubsub-redis.yaml",
           "position": "12",
           "highlightWholeLine": true
         }
@@ -224,8 +224,8 @@
         },
         {
           "action": "rename",
-          "path": "Demo1-Declarative/Resources/pubsub.yaml",
-          "dest": "Demo1-Declarative/Resources/pubsub.yaml.temp"
+          "path": "Demo1-Declarative/Resources/pubsub-redis.yaml",
+          "dest": "Demo1-Declarative/Resources/pubsub-redis.yaml.temp"
         },
         {
           "action": "open",
@@ -342,8 +342,8 @@
         },
         {
           "action": "rename",
-          "path": "Demo1-Declarative/Resources/pubsub.yaml.temp",
-          "dest": "Demo1-Declarative/Resources/pubsub.yaml"
+          "path": "Demo1-Declarative/Resources/pubsub-redis.yaml.temp",
+          "dest": "Demo1-Declarative/Resources/pubsub-redis.yaml"
         }
       ]
     },
@@ -376,8 +376,8 @@
         },
         {
           "action": "rename",
-          "path": "Demo1-Declarative/Resources/pubsub.yaml",
-          "dest": "Demo1-Declarative/Resources/pubsub.yaml.temp"
+          "path": "Demo1-Declarative/Resources/pubsub-redis.yaml",
+          "dest": "Demo1-Declarative/Resources/pubsub-redis.yaml.temp"
         },
         {
           "action": "open",
@@ -465,8 +465,8 @@
         },
         {
           "action": "rename",
-          "path": "Demo1-Declarative/Resources/pubsub.yaml.temp",
-          "dest": "Demo1-Declarative/Resources/pubsub.yaml"
+          "path": "Demo1-Declarative/Resources/pubsub-redis.yaml.temp",
+          "dest": "Demo1-Declarative/Resources/pubsub-redis.yaml"
         },
         {
           "action": "executeTerminalCommand",
