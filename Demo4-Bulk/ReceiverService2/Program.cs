@@ -25,11 +25,17 @@ app.MapPost("/messagehandler",
         try
         {
             // Process each message
-            responseEntries.Add(new BulkSubscribeAppResponseEntry(message.EntryId, BulkSubscribeAppResponseStatus.SUCCESS));
+            responseEntries.Add(
+                new BulkSubscribeAppResponseEntry(
+                    message.EntryId,
+                    BulkSubscribeAppResponseStatus.SUCCESS));
         }
         catch (Exception)
         {
-            responseEntries.Add(new BulkSubscribeAppResponseEntry(message.EntryId, BulkSubscribeAppResponseStatus.RETRY));
+            responseEntries.Add(
+                new BulkSubscribeAppResponseEntry(
+                    message.EntryId,
+                    BulkSubscribeAppResponseStatus.RETRY));
         }
     }
     return new BulkSubscribeAppResponse(responseEntries);
