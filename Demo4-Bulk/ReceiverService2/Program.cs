@@ -9,8 +9,8 @@ app.MapSubscribeHandler();
 
 const string PUBSUB_NAME = "demo4-pubsub";
 const string TOPIC_NAME = "incoming-messages-bulk";
-const int MAX_MESSAGE_COUNT = 10;
-const int MAX_DURATION_MS = 50;
+const int MAX_MESSAGE_COUNT = 50; // Optional - default is 100
+const int MAX_DURATION_MS = 500; // Optional - default is 1000ms
 
 app.MapPost("/messagehandler", 
     [BulkSubscribe(TOPIC_NAME, MAX_MESSAGE_COUNT, MAX_DURATION_MS)]
