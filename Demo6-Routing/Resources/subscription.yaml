@@ -9,7 +9,7 @@ spec:
     rules:
       - match: event.data.type == "dapr.demo.type2"
         path: /handletype2
-    # If receiver2 should only receive type2 message do not use a default route.
+    # There is no default route in this case.
     # default: /messagehandler
 scopes:
 - receiver2

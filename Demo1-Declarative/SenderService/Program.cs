@@ -29,8 +29,7 @@ app.MapPost("/sendasbytes", async (
         await daprClient.PublishByteEventAsync(
             pubsubName: PubSubComponentName,
             topicName: TopicName,
-            data: content.AsMemory(),
-            dataContentType: MediaTypeNames.Application.Json);
+            data: content.AsMemory());
         Console.WriteLine($"Sent message {message.Id}.");
 
         return Results.Accepted(string.Empty, message.Id);

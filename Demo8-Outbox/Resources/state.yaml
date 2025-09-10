@@ -12,5 +12,3 @@ spec:
     value: "demo8-pubsub"
   - name: outboxPublishTopic # Required
     value: "state-changes"
-  - name: outboxDiscardWhenMissingState
-    value: "true"

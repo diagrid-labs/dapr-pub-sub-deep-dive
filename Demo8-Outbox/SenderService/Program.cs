@@ -9,7 +9,8 @@ var app = builder.Build();
 const string StateComponentName = "demo8-statestore";
 
 app.MapPost("/save", async (
-    TinyMessage message, DaprClient daprClient) => {
+    TinyMessage message,
+    DaprClient daprClient) => {
 
         var request = new StateTransactionRequest(
             key: message.Id.ToString(),
