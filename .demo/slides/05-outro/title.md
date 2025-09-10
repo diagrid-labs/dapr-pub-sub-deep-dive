@@ -7,7 +7,7 @@ layout: two-columns
 
 Use the QR code to:
 
-1. Rate my session ⭐️⭐️⭐️⭐️⭐️ & provide feedback
+1. Rate my session ⭐️⭐️⭐️⭐️⭐️ & provide feedback 📝
 2. Access resources 📚
 3. Connect with me! 🤝
 
