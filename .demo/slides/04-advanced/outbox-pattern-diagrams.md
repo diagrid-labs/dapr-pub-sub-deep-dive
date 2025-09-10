@@ -3,6 +3,8 @@ theme: default
 layout: default
 ---
 
+## The transactional outbox pattern is a well known design pattern for sending notifications regarding changes in an application’s state. 
+
 ```mermaid
 ---
 title: Outbox Pattern
