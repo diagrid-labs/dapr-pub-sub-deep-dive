@@ -11,5 +11,6 @@ layout: default
 - Bulk messaging
 - Cloud Events
 - Routing
-- Resiliency & Dead Lettering
+- Resiliency
+- Dead Lettering
 - Outbox pattern

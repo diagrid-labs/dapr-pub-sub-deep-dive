@@ -55,7 +55,6 @@
       }
     },
     {
-      "id": "demo-mf4id3ib-w1uk",
       "title": "Show QR",
       "steps": [
         {
@@ -69,6 +68,21 @@
       ],
       "icons": {
         "start": "device-camera",
+        "end": ""
+      }
+    },
+    {
+      "title": "Show EngageTime",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "url": "https://engagetime.live/session/shiqu7",
+          "command": "simpleBrowser.show",
+          "args": "https://engagetime.live/session/shiqu7"
+        }
+      ],
+      "icons": {
+        "start": "globe",
         "end": ""
       }
     },

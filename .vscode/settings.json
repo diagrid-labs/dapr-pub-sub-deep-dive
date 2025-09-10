@@ -2,5 +2,8 @@
     "liveServer.settings.port": 5501,
     "demoTime.customTheme": ".demo/slides/theme/theme.css",
     "demoTime.nextActionBehaviour": "currentPosition",
-    "demoTime.timer": 55
+    "demoTime.timer": 55,
+    "workbench.statusBar.visible": true,
+    "workbench.editor.showTabs": "single",
+    "workbench.activityBar.location": "default"
 }
