@@ -518,7 +518,8 @@
       "icons": {
         "start": "vm",
         "end": "pass-filled"
-      }
+      },
+      "disabled": false
     },
     {
       "title": "Declarative subscription.yaml",
@@ -578,7 +579,8 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      }
+      },
+      "disabled": true
     },
     {
       "title": "Demo Declarative: Publish message",
@@ -592,7 +594,8 @@
       "icons": {
         "start": "symbol-event",
         "end": "pass-filled"
-      }
+      },
+      "disabled": true
     },
     {
       "title": "Demo Declarative: Stop services",
@@ -620,7 +623,8 @@
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
         }
-      ]
+      ],
+      "disabled": true
     },
     {
       "title": "Programmatic",
