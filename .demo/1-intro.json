@@ -133,6 +133,16 @@
         {
           "action": "openSlide",
           "path": "/.demo/slides/01-intro/bio.md"
+        },
+        {
+          "action": "closeEngageTimePoll",
+          "sessionId": "shiqu7",
+          "pollId": "spxbf2"
+        },
+        {
+          "action": "closeEngageTimePoll",
+          "sessionId": "shiqu7",
+          "pollId": "zidssc"
         }
       ],
       "icons": {
