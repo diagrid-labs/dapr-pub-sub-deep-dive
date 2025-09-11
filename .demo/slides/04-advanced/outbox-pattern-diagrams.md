@@ -3,7 +3,7 @@ theme: default
 layout: default
 ---
 
-## The transactional outbox pattern is a well known design pattern for sending notifications regarding changes in an application’s state. 
+## Commit a single transaction across a state store and pub/sub message broker
 
 ```mermaid
 ---

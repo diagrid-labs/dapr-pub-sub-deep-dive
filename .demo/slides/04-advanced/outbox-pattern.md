@@ -5,7 +5,7 @@ layout: section
 
 # Outbox Pattern
 
-## Commit a single transaction across a state store and pub/sub message broker
+## Design pattern for sending notifications regarding state changes. 
 
 [Dapr Docs: Outbox pattern](https://docs.dapr.io/developing-applications/building-blocks/state-management/howto-outbox/)
 
