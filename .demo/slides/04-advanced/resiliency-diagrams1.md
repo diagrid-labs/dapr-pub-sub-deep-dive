@@ -20,8 +20,8 @@ graph LR
     sidecar]
     S --> SD -.->|Outbound
     policy| T
-    T -.->|Inbound
-    policy| RD--> R
+    T -.-> RD-->|Inbound
+    policy| R
 ```
 
 [Dapr Docs: Resiliency Overview](https://docs.dapr.io/operations/resiliency/resiliency-overview/)
