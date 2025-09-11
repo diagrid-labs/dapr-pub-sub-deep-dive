@@ -336,6 +336,10 @@
           "command": "\u0003"
         },
         {
+          "action": "waitForTimeout",
+          "timeout": 2000
+        },
+        {
           "action": "executeTerminalCommand",
           "terminalId": "rabbitmq",
           "command": "clear"
