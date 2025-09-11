@@ -34,8 +34,8 @@ var messagingClient = app.Services.GetRequiredService<DaprPublishSubscribeClient
 var cancellationTokenSource = new CancellationTokenSource(TimeSpan.FromSeconds(30));
 var subscriptionOptions = new DaprSubscriptionOptions(
     new MessageHandlingPolicy(
-        TimeSpan.FromSeconds(10),
-        TopicResponseAction.Retry));
+        TimeoutDuration: TimeSpan.FromSeconds(10),
+        DefaultResponseAction: TopicResponseAction.Retry));
 var subscription = await messagingClient.SubscribeAsync(
     PUBSUB_NAME,
     TOPIC_NAME,
