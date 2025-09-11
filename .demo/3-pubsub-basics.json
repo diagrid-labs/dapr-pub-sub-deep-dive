@@ -209,7 +209,7 @@
         "start": "vm",
         "end": "pass-filled"
       },
-      "disabled": true
+      "disabled": false
     },
     {
       "title": "Start RabbitMQ",
@@ -238,7 +238,7 @@
           "command": "docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4-management"
         }
       ],
-      "disabled": true
+      "disabled": false
     },
     {
       "title": "Demo Pub/Sub RabbitMQ: Start services",
@@ -267,7 +267,7 @@
         "start": "code",
         "end": "pass-filled"
       },
-      "disabled": true
+      "disabled": false
     },
     {
       "title": "Demo Pub/Sub RabbitMQ: Check component init",
@@ -287,7 +287,7 @@
         "start": "symbol-event",
         "end": "pass-filled"
       },
-      "disabled": true
+      "disabled": false
     },
     {
       "title": "Demo Pub/Sub RabbitMQ: Publish message",
@@ -302,7 +302,7 @@
         "start": "symbol-event",
         "end": "pass-filled"
       },
-      "disabled": true
+      "disabled": false
     },
     {
       "title": "Demo Pub/Sub RabbitMQ: Stop services",
@@ -351,7 +351,7 @@
           "dest": "Demo1-Declarative/Resources/pubsub-redis.yaml"
         }
       ],
-      "disabled": true
+      "disabled": false
     },
     {
       "title": "Switch to Azure Service Bus",
