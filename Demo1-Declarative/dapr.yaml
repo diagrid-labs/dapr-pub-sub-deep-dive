@@ -1,8 +1,8 @@
 version: 1
 common:
   resourcesPath: Resources
-  appLogDestination: fileAndConsole
-  daprdLogDestination: fileAndConsole
+  appLogDestination: console
+  daprdLogDestination: console
 apps:
   - appID: sender
     appDirPath: SenderService

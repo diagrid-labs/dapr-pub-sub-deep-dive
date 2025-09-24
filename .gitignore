@@ -6,6 +6,9 @@
 # Repo files
 secrets.json
 
+# Diagrid
+.diagrid
+
 # User-specific files
 *.rsuser
 *.suo
