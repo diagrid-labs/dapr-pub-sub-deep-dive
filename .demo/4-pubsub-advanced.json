@@ -543,8 +543,7 @@
       "description": "",
       "steps": [
         {
-          "action": "executeTerminalCommand",
-          "command": " ",
+          "action": "focusTerminal",
           "terminalId": "dapr-run"
         }
       ],
@@ -589,8 +588,7 @@
       "description": "",
       "steps": [
         {
-          "action": "executeTerminalCommand",
-          "command": " ",
+          "action": "focusTerminal",
           "terminalId": "dapr-run"
         }
       ],
@@ -803,7 +801,7 @@
           "command": "clear",
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
-        }
+        },
         {
           "action": "insert",
           "path": "Demo7-Resiliency/ReceiverService/Program.cs",
@@ -895,7 +893,7 @@
         {
           "action": "executeTerminalCommand",
           "terminalId": "postgresql",
-          "command": "docker run -it --rm --name postgresql -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 postgres"
+          "command": "docker run -it --rm --name postgresql -e POSTGRES_PASSWORD=postgres123 -p 5432:5432 postgres"
         }
       ]
     },
@@ -949,27 +947,33 @@
       },
       "steps": [
         {
-          "action": "executeTerminalCommand",
-          "terminalId": "postgresql",
-          "command": "\u0003"
+          "action": "focusTerminal",
+          "terminalId": "dapr-run"
         },
         {
-          "action": "executeTerminalCommand",
-          "terminalId": "dapr-run",
-          "command": "\u0003"
+          "action": "sendKeybinding",
+          "keybinding": "ctrl+c"
+        },
+        {
+          "action": "focusTerminal",
+          "terminalId": "postgres"
+        },
+        {
+          "action": "sendKeybinding",
+          "keybinding": "ctrl+c"
         },
         {
           "action": "executeTerminalCommand",
           "terminalId": "dapr-run",
           "command": "cd ..",
-          "insertTypingMode": "character-by-character",
+          "insertTypingMode": "instant",
           "insertTypingSpeed": 50
         },
         {
           "action": "executeTerminalCommand",
           "terminalId": "dapr-run",
           "command": "clear",
-          "insertTypingMode": "character-by-character",
+          "insertTypingMode": "instant",
           "insertTypingSpeed": 50
         }
       ]

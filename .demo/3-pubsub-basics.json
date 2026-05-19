@@ -370,7 +370,8 @@
       "icons": {
         "start": "vm",
         "end": "pass-filled"
-      }
+      },
+      "disabled": true
     },
     {
       "title": "Show component file",
@@ -393,7 +394,8 @@
           "action": "open",
           "path": "Demo1-Declarative/Resources/pubsub-servicebus.yaml"
         }
-      ]
+      ],
+      "disabled": true
     },
     {
       "title": "Demo Pub/Sub ServiceBus: Start services",
@@ -421,7 +423,8 @@
       "icons": {
         "start": "code",
         "end": "pass-filled"
-      }
+      },
+      "disabled": true
     },
     {
       "title": "Demo Pub/Sub ServiceBus: Check component init",
@@ -440,7 +443,8 @@
       "icons": {
         "start": "symbol-event",
         "end": "pass-filled"
-      }
+      },
+      "disabled": true
     },
     {
       "title": "Demo Pub/Sub ServiceBus: Publish message",
@@ -454,7 +458,8 @@
       "icons": {
         "start": "symbol-event",
         "end": "pass-filled"
-      }
+      },
+      "disabled": true
     },
     {
       "title": "Demo Pub/Sub ServiceBus: Stop services",
@@ -492,7 +497,8 @@
           "insertTypingMode": "character-by-character",
           "insertTypingSpeed": 50
         }
-      ]
+      ],
+      "disabled": true
     },
     {
       "title": "3 ways of doing subscriptions",
@@ -584,7 +590,7 @@
         "start": "code",
         "end": "pass-filled"
       },
-      "disabled": true
+      "disabled": false
     },
     {
       "title": "Demo Declarative: Publish message",
@@ -599,7 +605,7 @@
         "start": "symbol-event",
         "end": "pass-filled"
       },
-      "disabled": true
+      "disabled": false
     },
     {
       "title": "Demo Declarative: Stop services",
@@ -628,7 +634,7 @@
           "insertTypingSpeed": 50
         }
       ],
-      "disabled": true
+      "disabled": false
     },
     {
       "title": "Programmatic",

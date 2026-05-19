@@ -7,7 +7,7 @@ spec:
   version: v2
   metadata:
   - name: connectionString
-    value: "host=localhost port=5432 user=postgres password=mysecretpassword dbname=postgres"
+    value: "host=localhost port=5432 user=postgres password=postgres123 dbname=postgres"
   - name: outboxPublishPubsub # Required
     value: "demo8-pubsub"
   - name: outboxPublishTopic # Required
