@@ -28,4 +28,4 @@ This repository contains demo applications in .NET to show many aspects of the [
 - Learn Dapr in an online sandbox environment with [Dapr University](https://www.diagrid.io/dapr-university)
 - Check [Diagrid.io](https://www.diagrid.io/) for
   - Enterprise Dapr Support
-  - Managed Dapr APIs via Catalyst
+  - Managed Dapr APIs via Diagrid
